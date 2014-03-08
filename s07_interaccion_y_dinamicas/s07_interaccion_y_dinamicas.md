@@ -127,7 +127,7 @@ Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no
 * **\-** No muestran el contexto (ej: ¿qué ofrecen?)
 * **\-** La interacción puede ser más lenta
 
-# Guía de diseño.
+# Guía de diseño
 
 ## Las 8 reglas de oro
 
@@ -196,7 +196,7 @@ Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no
 
 * **Es un elemento más de diseño:**
 	* Lo normal es: mejor cuanto menor sean los tiempos de espera
-	* Pero tiempos cortos llevan al usuario a pensar menos sus acciones.
+	* Pero tiempos cortos llevan al usuario a pensar menos sus acciones
 
 * Los tiempos de espera largos tiene que ser avisados
 * Para esperas de más de 2 segundos se necesita enseñar algún feedback
