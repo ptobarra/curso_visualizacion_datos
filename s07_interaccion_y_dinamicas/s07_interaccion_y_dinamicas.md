@@ -183,8 +183,8 @@ Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no
 
 ## Tiempos de respuesta
 
-* Acciones percividas como inmediatas: **50 - 150 ms**
-* Acciones fecuentes y simples: **menos de 1 segundo**
+* Acciones percividas como instantáneas: **50 - 150 ms** (Tiempo de procesado de la percepción)
+* Acciones fecuentes y simples, percividas como inmediatas: **menos de 1 segundo**
 * Acciones comunes: **2-4 segundos**
 * Acciones complejas: **8-12 segundos**
 
