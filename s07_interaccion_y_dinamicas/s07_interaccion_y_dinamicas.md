@@ -131,37 +131,78 @@ Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no
 
 ## Las 8 reglas de oro
 
-1.- Luchar por la coherencia
-:   Secuencias de acciones consistentes deberían ser necesarias en situaciones similares; idéntica terminología debe utilizarse en anuncios, menús y pantallas de ayuda, y los comandos consistentes deben ser empleados en todo.
+1.- Persigue la coherencia
+:   - Para conseguir efectos similares, la secuencias de acciones a realizar debe ser similar.
+	- Idéntica terminología para los mismos conceptos, es decir, evita usar sinónimos. 
 
 2.- Permite a los usuarios frecuentes utilizar accesos directos
-:   A medida que la frecuencia de uso aumenta, también lo hacen los deseos del usuario para reducir el número de acciones y aumentar el ritmo de interacción. Acrónimos y abreviaturas, las teclas de función, los comandos ocultos, y macro instalaciones son muy útiles para un usuario experto.
+:   - A medida que la frecuencia de uso aumenta, también lo hacen los deseos del usuario para reducir el número de acciones y aumentar el ritmo de interacción.
+	- Acrónimos y abreviaturas, las teclas de función, los comandos ocultos, y macro instalaciones son muy útiles para un usuario experto.
 
 -------------------------------------------------------------------------------
 
 3.- Ofrece comentarios informativos
-:   Por cada operador de acción, debe haber algún sistema de retroalimentación. Para acciones frecuentes y de menor uso, la respuesta puede ser modesta, mientras que para los poco frecuentes y las principales acciones, la respuesta debería ser más sustancial.
+:   - Cada acción del usuario debe tener algún sistema de retroalimentación.
+    - Para acciones frecuentes y/o de poco efecto, la respuesta puede ser modesta.
+	- Para las poco frecuentes y/o las acciones principales, la respuesta debería ser más sustancial.
+	- Representar los objetos sobre los que se actúa (Direct manipulation) es una manera explícita de dar feedback.
 
-4.- Diseño de diálogo para producir la clausura
-:   Acciones secuenciales debe organizarse en grupos con un comienzo, intermedio y final. La retroalimentación informativa a la conclusión de un grupo de acciones da a los operadores la satisfacción de logro, una sensación de alivio, la señal para dejar caer los planes de contingencia y las opciones de sus mentes, y una indicación de que la vía está libre para prepararse para el siguiente grupo de acciones.
-
--------------------------------------------------------------------------------
-
-5.- Ofrece una manipulación de errores simples.
-:   En la medida de lo posible, diseñar el sistema para que el usuario no ocasione un grave error. Si aparece un error, el sistema debería ser capaz de detectar el error y ofrecer de manera sencilla y comprensible una manera para identificar el error.
-
-6.- Permitir un fácil retroceso de las acciones.
-:   Esta característica alivia la ansiedad, ya que el usuario sabe que los errores se pueden deshacer, sino que por lo tanto, alienta la exploración de opciones desconocidas. Las unidades de reversibilidad pueden ser una sola acción, una entrada de datos, o un grupo de acciones.
+4.- Diseña los diálogos para producir la consecución de la tarea
+:   - Acciones secuenciales debe organizarse en grupos con un comienzo, un nudo y un final.
+	- Cuando se termian la acción se tiene que informar adecuadamente al usuairo.
+	- Dichos diálogos fomentan la sensación de logro, generando alivioy sitio en las mentes para otro grupo de acciones.
+	- Por ejemplo: compras por internet, instaladores.
 
 -------------------------------------------------------------------------------
 
-7.- Apoyo interno a un enfoque de control total.
-:   Los usuarios experimentados desean el sentido de que están a cargo del sistema y que el sistema responde a sus acciones. Diseña el sistema para que los usuarios inicien las acciones en lugar de los respuestas.
+5.- Previene errores
+:   - En la medida de lo posible, diseñar el sistema para que el usuario no ocasione un grave error.
+	- Por ejemplo con acciones deshabilitadas.
+	- Si aparece un error, el sistema debería ser capaz de detectar el error y ofrecer de manera sencilla y comprensible la identifiación del error.
 
-8.- Reducir la carga de la memoria a corto plazo.
-:   La limitación de recursos humanos de procesamiento de la información en la memoria a corto plazo exige que se muestren de manera sencilla, varias páginas se muestra consolidado, ventana-motion frecuencia se reducirá, y suficiente tiempo de formación se adjudicará a los códigos, mnemotécnicos, y secuencias de acciones.
+6.- Permite deshacer las acciones fácilmente
+:   - Esta característica alivia la ansiedad, ya que el usuario sabe que los errores se pueden deshacer, y por lo tanto, alienta la exploración de opciones desconocidas.
+	- La granularidad puede ser una sola acción, una entrada de datos, o un grupo de acciones.
 
+-------------------------------------------------------------------------------
 
+7.- Favorece la sensación de control
+:   - Los usuarios experimentados quieren sentir que están al mando del sistema y que éste responde a sus acciones.
+	- Diseña el sistema para que los usuarios inicien las acciones en lugar de los respuestas.
+
+8.- Reduce la carga de la memoria a corto plazo.
+:   - Los humanos tenemos una capacidad limitada de procesamiento de información en la memoria a corto plazo (7 mas menos 2)
+	- No hacer que el usuario tenga que recordar cosas de una pantalla a otra.
+	- Por ejemplo, un teléfono no debería pedir que un usuario introdujese un número de teléfono que le ha mostrado en una ventana anterior.
+
+## Principios destacados
+
+* **Prevenir errores**
+
+* **Asegurar el control del usuario y a la vez aumentar la automatización**
+
+## Tiempos de respuesta
+
+* Acciones percividas como inmediatas: **50 - 150 ms**
+* Acciones fecuentes y simples: **menos de 1 segundo**
+* Acciones comunes: **2-4 segundos**
+* Acciones complejas: **8-12 segundos**
+
+* Más de **15 segundos** pierdes la atención del usuario
+
+-------------------------------------------------------------------------------
+
+## Tiempos de respuesta (recomedaciones)
+
+* **Es un elemento más de diseño:**
+	* Lo normal es: mejor cuanto menor sean los tiempos de espera
+	* Pero tiempos cortos llevan al usuario a pensar menos sus acciones.
+
+* Los tiempos de espera largos tiene que ser avisados
+* Para esperas de más de 2 segundos se necesita enseñar algún feedback
+* Para esperas de más de 10 segundos, enseñar el proceso
+
+* **Lo peor son retardos inesperadas**. Hay que controlar la varianza de los tiempos de espera para la misma acción
 
 # paco
 
