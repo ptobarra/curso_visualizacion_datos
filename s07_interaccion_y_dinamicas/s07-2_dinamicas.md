@@ -38,7 +38,7 @@ Muchas propuestas. Por ejemplo:
 
 <div class="multicolumn">
 
-Especificiación de datos y vistas
+Especificación de datos y vistas
 :   - Visualizar
 	- Filtrar
 	- Ordenar
@@ -159,7 +159,7 @@ Proceso y procedencia
   de los items según se mueve la cámara estaremos hablando de
   **navegación semántica**
 
-* La nevegación se puede consigerar una forma de filtrar items
+* La navegación se puede considerar una forma de filtrar items
 
 ## Zoom geométrico
 
@@ -199,9 +199,9 @@ Proceso y procedencia
 
 # Registrar
 
-## Registar
+## Registrar
 
-* Cuando se presenta el resultado de un análisis lo abitual es que se pida **poder explicar** todos los pasos que han llevado a la conclusión
+* Cuando se presenta el resultado de un análisis lo habitual es que se pida **poder explicar** todos los pasos que han llevado a la conclusión
 
 * Si se obtienen datos de **múltiples fuentes** es necesario conocer de dónde vino qué
 
@@ -214,7 +214,7 @@ Proceso y procedencia
 
 ## Anotar
 
-* El analista debe ser capaz de describir sus idéas o hallazgos en el mismo sitio que surgen
+* El analista debe ser capaz de describir sus ideas o hallazgos en el mismo sitio que surgen
 * Permitir resaltar elementos destacados
 * Básico para comunicar los resultados
 
@@ -225,7 +225,7 @@ Proceso y procedencia
 ## Compartir
 
 * Exportar las vistas para los informes
-* Poder exportar o guradar todos los ajustes para regresar a la visualización concreta
+* Poder exportar o guardar todos los ajustes para regresar a la visualización concreta
 * Interactuar varios analistas a la vez sobre la misma herramienta
 
 # Guiar
