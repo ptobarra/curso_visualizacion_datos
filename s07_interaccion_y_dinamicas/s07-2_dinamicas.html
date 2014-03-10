@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Juan Morales del Olmo" />
+  <title>Dinámicas en visual analytics</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+
+  <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="style.css"/>
+
+  <link rel="stylesheet" media="print" href="reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Dinámicas en visual analytics</h1>
+    <h2 class="author">Juan Morales del Olmo</h2>
+    <h3 class="date">20 de marzo de 2014</h3>
+</section>
+
+<section><section id="dinámicas-para-el-análisis-visual" class="titleslide slide level1"><h1>Dinámicas para el análisis visual</h1></section><section id="taxonomías-de-tareas" class="slide level2">
+<h1>Taxonomías de tareas</h1>
+<p>Muchas propuestas. Por ejemplo:</p>
+<div class="multicolumn">
+<div>
+<ul>
+<li>7 tareas <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=545307&amp;url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D545307">Shneiderman, 96</a>
+<ul>
+<li>Overview</li>
+<li>Zoom</li>
+<li>Filter</li>
+<li>Details-on-demand</li>
+<li>Relate</li>
+<li>History</li>
+<li>Extract</li>
+</ul></li>
+</ul>
+</div>
+<div>
+<ul>
+<li>10 tareas <a href="http://www.cc.gatech.edu/~john.stasko/papers/infovis05.pdf">Stasko, 05</a>
+<ul>
+<li>Retrieve Value</li>
+<li>Filter</li>
+<li>Compute Derived Value</li>
+<li>Find Extremum</li>
+<li>Sort</li>
+<li>Determine Range</li>
+<li>Characterize Distribution</li>
+<li>Find Anomalies</li>
+<li>Cluster</li>
+<li>Correlate</li>
+</ul>
+</div></li>
+</ul>
+</div>
+
+</section><section id="heer-y-shneiderman-2012" class="slide level2">
+<h1><a href="https://queue.acm.org/detail.cfm?id=2146416">Heer y Shneiderman, 2012</a></h1>
+<div class="multicolumn">
+<dl>
+<dt>Especificiación de datos y vistas</dt>
+<dd><ul>
+<li>Visualizar</li>
+<li>Filtrar</li>
+<li>Ordenar</li>
+<li>Derivar</li>
+</ul>
+</dd>
+<dt>Manipulación de las vistas</dt>
+<dd><ul>
+<li>Seleccionar</li>
+<li>Navegar</li>
+<li>Coordinar</li>
+<li>Organizar</li>
+</ul>
+</dd>
+<dt>Proceso y procedencia</dt>
+<dd><ul>
+<li>Registrar</li>
+<li>Anotar</li>
+<li>Compartir</li>
+<li>Guiar</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<p>12 tareas en 3 grupos</p>
+</div>
+<p><a href="http://queue.acm.org/detail.cfm?id=2146416">http://queue.acm.org/detail.cfm?id=2146416</a></p>
+</section></section>
+<section><section id="visualizar" class="titleslide slide level1"><h1>Visualizar</h1></section><section id="visualizar---charts" class="slide level2">
+<h1>Visualizar - Charts</h1>
+<figure>
+<img src="images/visualizar-chart.png" alt="Excel" /><figcaption>Excel</figcaption>
+</figure>
+</section><section id="charts---programando" class="slide level2">
+<h1>Charts - Programando</h1>
+<iframe width="100%" height="800" src="http://www.highcharts.com/demo/line-basic" frameborder="1" allowfullscreen></iframe>
+
+<!--
+## 
+<iframe width="853" height="480" src="//www.youtube.com/embed/c70cjQXWkFI?start=25&end=104" frameborder="0" allowfullscreen></iframe>
+-->
+
+</section><section id="visualizar---flujo-de-datos" class="slide level2">
+<h1>Visualizar - Flujo de datos</h1>
+<figure>
+<img src="images/vistrails.png" alt="VisTrails" /><figcaption>VisTrails</figcaption>
+</figure>
+</section><section id="visualizar---flujo-de-datos-1" class="slide level2">
+<h1>Visualizar - Flujo de datos</h1>
+<figure>
+<img src="images/knime-wf.png" alt="Knime" /><figcaption>Knime</figcaption>
+</figure>
+</section><section id="flujo-de-datos---programando" class="slide level2">
+<h1>Flujo de datos - Programando</h1>
+<iframe width="100%" height="800" src="http://www.vtk.org/Wiki/VTK/Examples/Cxx/Filters/GaussianSplat" frameborder="1" allowfullscreen></iframe>
+
+</section><section id="visualizar---gramáticas" class="slide level2">
+<h1>Visualizar - Gramáticas</h1>
+<figure>
+<img src="images/tableau-grammar.jpg" alt="Tableau" /><figcaption>Tableau</figcaption>
+</figure>
+</section><section id="gramáticas---programando" class="slide level2">
+<h1>Gramáticas - Programando</h1>
+<iframe width="100%" height="800" src="http://trifacta.github.io/vega/editor/" frameborder="1" allowfullscreen></iframe>
+
+</section></section>
+<section><section id="filtrar" class="titleslide slide level1"><h1>Filtrar</h1></section><section id="filtrar-1" class="slide level2">
+<h1>Filtrar</h1>
+<ul>
+<li><p>Normalmente no se quiere ver toda la información a la vez</p></li>
+<li><p>Muy relacionado con la tarea de <strong>Seleccionar</strong></p></li>
+</ul>
+</section><section id="filtrar---queries-dinámicas" class="slide level2">
+<h1>Filtrar - Queries dinámicas</h1>
+<figure>
+<img src="images/query-selectors.png" alt="Dinamic Queries" /><figcaption>Dinamic Queries</figcaption>
+</figure>
+</section><section id="visualizaciones-como-filtros" class="slide level2">
+<h1>Visualizaciones como filtros</h1>
+<figure>
+<img src="images/crossfilter.png" alt="Crossfilter" /><figcaption><a href="http://square.github.io/crossfilter/">Crossfilter</a></figcaption>
+</figure>
+</section></section>
+<section><section id="ordenar" class="titleslide slide level1"><h1>Ordenar</h1></section><section id="ordenar-1" class="slide level2">
+<h1>Ordenar</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3885705/" frameborder="1" allowfullscreen></iframe>
+
+</section></section>
+<section><section id="derivar" class="titleslide slide level1"><h1>Derivar</h1></section><section id="hermanar-con-análisis-de-datos" class="slide level2">
+<h1>Hermanar con análisis de datos</h1>
+<figure>
+<img src="images/plot_outlier_detection.png" alt="Outlier detection" /><figcaption>Outlier detection</figcaption>
+</figure>
+</section></section>
+<section><section id="seleccionar" class="titleslide slide level1"><h1>Seleccionar</h1></section><section id="selección-directa-brushing" class="slide level2">
+<h1>Selección directa (brushing)</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1" allowfullscreen></iframe>
+
+</section><section id="selección-directa-lasso" class="slide level2">
+<h1>Selección directa (lasso)</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/GerHobbelt/raw/3732612/" frameborder="1" allowfullscreen></iframe>
+
+</section><section id="selección-indirecta" class="slide level2">
+<h1>Selección indirecta</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/5180185/" frameborder="1" allowfullscreen></iframe>
+
+</section></section>
+<section><section id="navegar" class="titleslide slide level1"><h1>Navegar</h1></section><section id="navegar-es-mover-la-cámara" class="slide level2">
+<h1>Navegar es mover la cámara</h1>
+<ul>
+<li><p>Se usa la metáfora de la cámara.</p>
+<ul>
+<li><p>En visualizaciones en 3D, la metáfora es directa. <strong>Navegación geométrica</strong></p></li>
+<li><p>En visualizaciones en 2D también puede serlo. (Pan and Zoom) <strong>Navegación geométrica</strong></p></li>
+</ul></li>
+<li><p>Si cambiamos la representación (diferente de cambiar la proyección) de los items según se mueve la cámara estaremos hablando de <strong>navegación semántica</strong></p></li>
+<li><p>La nevegación se puede consigerar una forma de filtrar items</p></li>
+</ul>
+</section><section id="zoom-geométrico" class="slide level2">
+<h1>Zoom geométrico</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3680958/" frameborder="1" allowfullscreen></iframe>
+
+</section><section id="zoom-semántico" class="slide level2">
+<h1>Zoom semántico</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3681006/" frameborder="1" allowfullscreen></iframe>
+
+</section><section id="foco-más-contexto" class="slide level2">
+<h1>Foco más contexto</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/1667367/" frameborder="1" allowfullscreen></iframe>
+
+</section><section id="distorsión-ojo-de-pez" class="slide level2">
+<h1>Distorsión ojo de pez</h1>
+<iframe width="100%" height="800" src="http://bost.ocks.org/mike/fisheye/" frameborder="1" allowfullscreen></iframe>
+
+</section></section>
+<section><section id="coordinar" class="titleslide slide level1"><h1>Coordinar</h1></section><section id="small-mulitples-views" class="slide level2">
+<h1>Small mulitples views</h1>
+<figure>
+<img src="images/small-multiples.png" alt="Small multiples" /><figcaption>Small multiples</figcaption>
+</figure>
+</section><section id="vistas-múltiples-coordinadas" class="slide level2">
+<h1>Vistas múltiples coordinadas</h1>
+<iframe width="640" height="480" src="//www.youtube.com/embed/Tzsv6wkZoiQ?rel=0&start=84&end=107" frameborder="0" allowfullscreen></iframe>
+
+</section><section id="brushing-and-linking" class="slide level2">
+<h1>Brushing and linking</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1" allowfullscreen></iframe>
+
+</section></section>
+<section><section id="organizar" class="titleslide slide level1"><h1>Organizar</h1></section><section id="organizar-1" class="slide level2">
+<h1>Organizar</h1>
+<figure>
+<img src="images/ggobi.png" alt="GGobi" /><figcaption>GGobi</figcaption>
+</figure>
+</section></section>
+<section><section id="registrar" class="titleslide slide level1"><h1>Registrar</h1></section><section id="registar" class="slide level2">
+<h1>Registar</h1>
+<ul>
+<li><p>Cuando se presenta el resultado de un análisis lo abitual es que se pida <strong>poder explicar</strong> todos los pasos que han llevado a la conclusión</p></li>
+<li><p>Si se obtienen datos de <strong>múltiples fuentes</strong> es necesario conocer de dónde vino qué</p></li>
+<li><p>Las herramientas de <strong>análisis exploratorio</strong> fomentan la visualización de cientos de vistas y configuraciones diferentes. Algunas de ellas darán lugar a la creación de <strong>hipótesis</strong>. Tener un <strong>registro</strong> de todo el proceso es necesario para no pasar nada por alto.</p></li>
+</ul>
+</section></section>
+<section><section id="anotar" class="titleslide slide level1"><h1>Anotar</h1></section><section id="anotar-1" class="slide level2">
+<h1>Anotar</h1>
+<ul>
+<li>El analista debe ser capaz de describir sus idéas o hallazgos en el mismo sitio que surgen</li>
+<li>Permitir resaltar elementos destacados</li>
+<li>Básico para comunicar los resultados</li>
+</ul>
+<figure>
+<img src="images/anotaciones.png" alt="Anotaciones in-situ" /><figcaption>Anotaciones <em>in-situ</em></figcaption>
+</figure>
+</section></section>
+<section><section id="compartir" class="titleslide slide level1"><h1>Compartir</h1></section><section id="compartir-1" class="slide level2">
+<h1>Compartir</h1>
+<ul>
+<li>Exportar las vistas para los informes</li>
+<li>Poder exportar o guradar todos los ajustes para regresar a la visualización concreta</li>
+<li>Interactuar varios analistas a la vez sobre la misma herramienta</li>
+</ul>
+</section></section>
+<section><section id="guiar" class="titleslide slide level1"><h1>Guiar</h1></section><section id="guiar-1" class="slide level2">
+<h1>Guiar</h1>
+<iframe width="100%" height="800" src="http://www.nytimes.com/interactive/2013/02/04/science/girls-lead-in-science-exam-but-not-in-the-united-states.html" frameborder="1" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        theme: 'simple', // available themes are in /css/theme
+        transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>
