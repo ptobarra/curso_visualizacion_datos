@@ -8,6 +8,7 @@
 
 Muchas propuestas. Por ejemplo:
 
+
 <div class="multicolumn">
 <div>
 * 7 tareas [Shneiderman, 96][]
@@ -73,12 +74,10 @@ Proceso y procedencia
 ![Excel](images/visualizar-chart.png)
 
 ## Charts - Programando
-<iframe width="100%" height="800" src="http://www.highcharts.com/demo/line-basic" frameborder="1" allowfullscreen></iframe>
+<iframe width="100%" height="800" src="http://www.highcharts.com/demo/line-basic" frameborder="1" allowfullscreen>
+![[http://www.highcharts.com/demo/line-basic](http://www.highcharts.com/demo/line-basic)](images/link.png)
 
-<!--
-## 
-<iframe width="853" height="480" src="//www.youtube.com/embed/c70cjQXWkFI?start=25&end=104" frameborder="0" allowfullscreen></iframe>
--->
+</iframe>
 
 ## Visualizar - Flujo de datos
 
@@ -90,7 +89,10 @@ Proceso y procedencia
 
 ## Flujo de datos - Programando
 
-<iframe width="100%" height="800" src="http://www.vtk.org/Wiki/VTK/Examples/Cxx/Filters/GaussianSplat" frameborder="1" allowfullscreen></iframe>
+<iframe width="100%" height="800" src="http://www.vtk.org/Wiki/VTK/Examples/Cxx/Filters/GaussianSplat" frameborder="1" allowfullscreen>
+![[http://www.vtk.org/Wiki/VTK/Examples/Cxx/Filters/GaussianSplat](http://www.vtk.org/Wiki/VTK/Examples/Cxx/Filters/GaussianSplat)](images/link.png)
+
+</iframe>
 
 ## Visualizar - Gramáticas
 
@@ -98,7 +100,10 @@ Proceso y procedencia
 
 ## Gramáticas - Programando
 
-<iframe width="100%" height="800" src="http://trifacta.github.io/vega/editor/" frameborder="1" allowfullscreen></iframe>
+<iframe width="100%" height="800" src="http://trifacta.github.io/vega/editor/" frameborder="1" allowfullscreen>
+![[http://trifacta.github.io/vega/editor/](http://trifacta.github.io/vega/editor/)](images/link.png)
+
+</iframe>
 
 # Filtrar
 
@@ -123,7 +128,10 @@ Proceso y procedencia
 
 # Ordenar
 ## Ordenar
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3885705/" frameborder="1" allowfullscreen></iframe>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3885705/" frameborder="1" allowfullscreen>
+![[http://bl.ocks.org/mbostock/raw/3885705/](http://bl.ocks.org/mbostock/raw/3885705/)](images/link.png)
+
+</iframe>
 
 # Derivar
 
@@ -135,15 +143,23 @@ Proceso y procedencia
 
 ## Selección directa (brushing)
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1" allowfullscreen></iframe>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1" allowfullscreen>
+![[http://bl.ocks.org/mbostock/raw/4063663/](http://bl.ocks.org/mbostock/raw/4063663/)](images/link.png)
+
+</iframe>
 
 ## Selección directa (lasso)
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/GerHobbelt/raw/3732612/" frameborder="1" allowfullscreen></iframe>
+<iframe width="100%" height="800" src="http://bl.ocks.org/GerHobbelt/raw/3732612/" frameborder="1" allowfullscreen>
+![[http://bl.ocks.org/GerHobbelt/raw/3732612/](http://bl.ocks.org/GerHobbelt/raw/3732612/)](images/link.png)
+
+</iframe>
 
 ## Selección indirecta
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/5180185/" frameborder="1" allowfullscreen>
+![[http://bl.ocks.org/mbostock/raw/5180185/](http://bl.ocks.org/mbostock/raw/5180185/)](images/link.png)
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/5180185/" frameborder="1" allowfullscreen></iframe>
+</iframe>
 
 # Navegar
 
@@ -162,20 +178,30 @@ Proceso y procedencia
 * La navegación se puede considerar una forma de filtrar items
 
 ## Zoom geométrico
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3680958/" frameborder="1" allowfullscreen>
+![[http://bl.ocks.org/mbostock/raw/3680958/](http://bl.ocks.org/mbostock/raw/3680958/)](images/link.png)
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3680958/" frameborder="1" allowfullscreen></iframe>
+</iframe>
 
 ## Zoom semántico
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3681006/" frameborder="1" allowfullscreen>
+![[http://bl.ocks.org/mbostock/raw/3681006/](http://bl.ocks.org/mbostock/raw/3681006/)](images/link.png)
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3681006/" frameborder="1" allowfullscreen></iframe>
+</iframe>
 
 ## Foco más contexto
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/1667367/" frameborder="1" allowfullscreen></iframe>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/1667367/" frameborder="1" allowfullscreen>
+![[http://bl.ocks.org/mbostock/raw/1667367/](http://bl.ocks.org/mbostock/raw/1667367/)](images/link.png)
+
+</iframe>
 
 ## Distorsión ojo de pez
 
-<iframe width="100%" height="800" src="http://bost.ocks.org/mike/fisheye/" frameborder="1" allowfullscreen></iframe>
+<iframe width="100%" height="800" src="http://bost.ocks.org/mike/fisheye/" frameborder="1" allowfullscreen>
+![[http://bost.ocks.org/mike/fisheye/](http://bost.ocks.org/mike/fisheye/)](images/link.png)
+
+</iframe>
 
 # Coordinar
 
@@ -185,11 +211,17 @@ Proceso y procedencia
 
 ## Vistas múltiples coordinadas
 
-<iframe width="640" height="480" src="//www.youtube.com/embed/Tzsv6wkZoiQ?rel=0&start=84&end=107" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="http://www.youtube.com/embed/Tzsv6wkZoiQ?rel=0&start=84&end=107" frameborder="1" allowfullscreen>
+![[http://www.youtube.com/embed/Tzsv6wkZoiQ?rel=0&start=84&end=107](http://www.youtube.com/embed/Tzsv6wkZoiQ?rel=0&start=84&end=107)](images/link.png)
+
+</iframe>
 
 ## Brushing and linking
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1" allowfullscreen></iframe>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1" allowfullscreen>
+![[http://bl.ocks.org/mbostock/raw/4063663/](http://bl.ocks.org/mbostock/raw/4063663/)](images/link.png)
+
+</iframe>
 
 # Organizar
 
@@ -232,7 +264,10 @@ Proceso y procedencia
 
 ## Guiar
 
-<iframe width="100%" height="800" src="http://www.nytimes.com/interactive/2013/02/04/science/girls-lead-in-science-exam-but-not-in-the-united-states.html" frameborder="1" allowfullscreen></iframe>
+<iframe width="100%" height="800" src="http://www.nytimes.com/interactive/2013/02/04/science/girls-lead-in-science-exam-but-not-in-the-united-states.html" frameborder="1" allowfullscreen>
+![[http://www.nytimes.com/interactive/2013/02/04/science/girls-lead-in-science-exam-but-not-in-the-united-states.html](http://www.nytimes.com/interactive/2013/02/04/science/girls-lead-in-science-exam-but-not-in-the-united-states.html)](images/link.png)
+
+</iframe>
 
 
 

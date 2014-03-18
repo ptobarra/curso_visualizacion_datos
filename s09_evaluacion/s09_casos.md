@@ -6,7 +6,7 @@
 
 ## 
 
-![[Vientos 1](http://www.wunderground.com/US/Region/US/2xWindSpeed.html?MR=1)](images/viento-1.gif)
+![[Vientos 1](http://www.wunderground.com/US/Region/US/2xWindSpeed.html?MR=1)](images/viento-1.png)
 
 ## 
 
