@@ -58,7 +58,7 @@
 
 ## Grand Tour
 
-<video src="videos/grand-tour.webm" controls>
+<video src="../rsc/videos/grand-tour.webm" controls>
  ![[http://www.ggobi.org/demos/tour.html](http://www.ggobi.org/demos/tour.html)](../rsc/images/link.png)
 
 </video>
