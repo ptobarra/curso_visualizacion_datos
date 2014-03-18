@@ -26,7 +26,7 @@
 
 ## Revisión de expertos 
 
-![](images/ispy.jpg)
+![](../rsc/images/ispy.jpg)
 
 ## Proceso
 
@@ -42,7 +42,7 @@
 
 ## Test de usabilidad
 
-![](images/test-usabilidad.png)
+![](../rsc/images/test-usabilidad.png)
 
 ## Proceso
 
@@ -59,7 +59,7 @@
 # Test de laboratorio (control test)
 
 ##
-![Método científico](images/control-test.jpg)
+![Método científico](../rsc/images/control-test.jpg)
 
 ## Características
 
@@ -88,7 +88,7 @@
 
 ##
 
-![](images/mineros.jpg)
+![](../rsc/images/mineros.jpg)
 
 ## Características
 

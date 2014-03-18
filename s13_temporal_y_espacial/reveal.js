@@ -1,1 +1,0 @@
-../rsc/reveal.js/

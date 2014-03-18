@@ -59,7 +59,7 @@ $if(graphics)$
 % Para poner un fondo
 \usebackgroundtemplate%
 {%
-    \Oldincludegraphics[width=\paperwidth,height=\paperheight]{images/fondo-beamer.jpg}%
+    \Oldincludegraphics[width=\paperwidth,height=\paperheight]{../rsc/images/fondo-beamer.jpg}%
 }
 
 % Redefine \includegraphics so that, unless explicit options are
