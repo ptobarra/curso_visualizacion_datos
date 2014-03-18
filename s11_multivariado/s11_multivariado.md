@@ -119,8 +119,8 @@
 
 ## Vistas enlazadas
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1">
-![[http://bl.ocks.org/mbostock/raw/4063663/](http://bl.ocks.org/mbostock/raw/4063663/)](../rsc/images/link.png)
+<iframe width="100%" height="800" src="http://selfiecity.net/selfiexploratory/" frameborder="1" allowfullscreen>
+![[http://selfiecity.net/selfiexploratory/](http://selfiecity.net/selfiexploratory/)](../rsc/images/link.png)
 
 </iframe>
 
