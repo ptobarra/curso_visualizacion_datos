@@ -26,15 +26,14 @@
 * Agrupaciones (clustering)
 * Análisis de varianza.
 
-## Explotar canales gráficos
-
-![Jock D. Mackinlay's Perceptual tasks](images/Mackinlay_PerceptualTask.jpg)
 
 # Representaciones basadas en puntos
 
 ## Estrategias
 
 * Submuestreo de dimensiones
+
+* Multiples vistas
 
 * Reducción de la dimensionalidad
 
@@ -46,10 +45,67 @@
 
 <iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1"></iframe>
 
-# Reducción de dimensionalidad
+## Correlation Matrix
 
-## 
+![](images/correlation-matrix.png)
+
+## Reducción de dimensionalidad (MDS)
+
+![](images/mds.jpg)
 
 ## Grand Tour
 
 <video src="videos/grand-tour.webm" controls> http://www.ggobi.org/demos/tour.html </video>
+
+# Basados en líneas
+
+## Gráfico de líneas multivariado
+
+![Yuxtaposición de vistas](images/mv-line-graph.jpg)
+
+## Coordenadas Paralelas
+
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/7586334/" frameborder="1"></iframe>
+
+## Gráfica de Radar
+
+![Buenas para patrones cíclicos](images/radar-chart.jpg)
+
+# Basados en regiones
+
+## Gráficos de barras agrupados y apilados
+
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3943967/" frameborder="1"></iframe>
+
+## Gráficos en mosaico
+
+![Titanic dataset](images/mosaic.png)
+
+## Heatmap
+
+![Clustering revela patrones](images/heatmap.png)
+
+# Explotar canales gráficos
+
+##
+
+![Jock D. Mackinlay's Perceptual tasks](images/Mackinlay_PerceptualTask.jpg)
+
+## Glifos
+
+![](images/gliphs.png)
+
+## Caras de Chernoff 
+
+![](images/Chernoff.png)
+
+# Estrategias Interactivas
+
+## Ordenado según campos
+
+![Inxight](images/rank-by-feature.jpg)
+
+## Vistas enlazadas
+
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1"></iframe>
+
