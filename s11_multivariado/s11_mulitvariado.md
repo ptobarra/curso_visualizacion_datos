@@ -43,7 +43,10 @@
 
 ## Scatter Plots Matrix
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1"></iframe>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1">
+	![[http://bl.ocks.org/mbostock/raw/4063663/](http://bl.ocks.org/mbostock/raw/4063663/)](images/link.png)
+	
+</iframe>
 
 ## Correlation Matrix
 
@@ -55,7 +58,10 @@
 
 ## Grand Tour
 
-<video src="videos/grand-tour.webm" controls> http://www.ggobi.org/demos/tour.html </video>
+<video src="videos/grand-tour.webm" controls>
+ ![[http://www.ggobi.org/demos/tour.html](http://www.ggobi.org/demos/tour.html)](images/link.png)
+
+</video>
 
 # Basados en líneas
 
@@ -65,7 +71,10 @@
 
 ## Coordenadas Paralelas
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/7586334/" frameborder="1"></iframe>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/7586334/" frameborder="1">
+![[http://bl.ocks.org/mbostock/raw/7586334/](http://bl.ocks.org/mbostock/raw/7586334/)](images/link.png)
+
+</iframe>
 
 ## Gráfica de Radar
 
@@ -75,7 +84,10 @@
 
 ## Gráficos de barras agrupados y apilados
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3943967/" frameborder="1"></iframe>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3943967/" frameborder="1">
+![[http://bl.ocks.org/mbostock/raw/3943967/](http://bl.ocks.org/mbostock/raw/3943967/)](images/link.png)
+
+</iframe>
 
 ## Gráficos en mosaico
 
@@ -107,5 +119,8 @@
 
 ## Vistas enlazadas
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1"></iframe>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1">
+![[http://bl.ocks.org/mbostock/raw/4063663/](http://bl.ocks.org/mbostock/raw/4063663/)](images/link.png)
+
+</iframe>
 
