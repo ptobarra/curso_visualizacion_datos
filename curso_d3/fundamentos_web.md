@@ -68,7 +68,7 @@ Jerarquía (o árbol) con padres, hijos, vecinos, ascendientes y descendientes.
 * Todo está en cajas. 
 * Los principales: **div** y **span**
   
-		display:block y display:inline
+		display:block, display:inline, display:none
 * Margin, Border y Padding
 
 ## CSS ##
@@ -119,6 +119,13 @@ Por ID
 	* 630px
 	* 23m
 	* 45%
+
+##
+
+<iframe width="100%" height="800" src="http://jsbin.com/cuxuc/6/embed">
+	![[http://jsbin.com/cuxuc/6/embed](http://jsbin.com/cuxuc/6/embed)](../rsc/images/link.png)
+
+</iframe>
 
 ## ¿Dónde poner los estilos?
 
@@ -188,12 +195,21 @@ Por ID
 	* callbacks 
 > * JSON
 
+
 ## Ojo, fallos comunes ##
 
 > * No se define el tipo, una variable puede cambiar su tipo sin más
 > * Elevado de la declaración de variables
 > * El ámbito de las variables es la función
 > * Si no pones *var* se declara como varable *global*. En *window* 
+
+##
+
+<iframe width="100%" height="800" src="http://jsbin.com/nosuz/5/embed?js,console">
+	![[http://jsbin.com/nosuz/5/embed?js,console](http://jsbin.com/nosuz/5/embed?js,console)](../rsc/images/link.png)
+
+</iframe>
+
 
 ## SVG ##
 
@@ -219,3 +235,10 @@ Por ID
         <line x1="0" y1="0" x2="500" y2="50" stroke="black"/>
 
 	</svg>
+
+##
+
+<iframe width="100%" height="800" src="http://jsbin.com/meruf/4/embed?html,output">
+	![[http://jsbin.com/meruf/4/embed?html,output](http://jsbin.com/meruf/4/embed?html,output)](../rsc/images/link.png)
+
+</iframe>
