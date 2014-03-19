@@ -73,6 +73,8 @@ body {
 
 .reveal ul {line-height: 1.2em;}
 
+.reveal pre {width: 100%;}
+
 .reveal .medium {font-size: 0.8em;}
 
 .reveal .progress {height: 10px;}
