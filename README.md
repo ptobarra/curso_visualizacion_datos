@@ -15,4 +15,12 @@
 
 * [Datos multivariados](s11_multivariado/s11_multivariado.html)
 
+<hr>
 
+## Curso de D3.js
+
+* [Fundamentos Web](curdo_d3/fundamentos_web.html)
+
+### Recursos
+
+* [Plantilla](curso_d3/plantilla/)
