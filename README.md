@@ -19,7 +19,7 @@
 
 ## Curso de D3.js
 
-* [Fundamentos Web](curdo_d3/fundamentos_web.html)
+* [Fundamentos Web](curso_d3/fundamentos_web.html)
 
 ### Recursos
 
