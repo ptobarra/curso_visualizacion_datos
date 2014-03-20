@@ -6,6 +6,10 @@
 
 ## Usabilidad
 
+* ¿Cómo lo definiríais?
+
+## Usabilidad
+
 Según el ISO 9241 "Ergonomics of Human-System Interaction", los objetivos son maximizar:
 
 * Efectividad
@@ -25,6 +29,10 @@ Si nos centramos más en la práctica. Se puede medir y evaluar:
 * Tiempo que los usuarios recuerdan cómo usar la interfaz
 
 * Satisfacción subjetiva
+
+-------------------------------------------------------------------------------
+
+* ¿ Cómo lo conseguimos ?
 
 ## Diseño centrado en usuario
 
@@ -55,7 +63,7 @@ Si nos centramos más en la práctica. Se puede medir y evaluar:
 
 ## Conocer al usuario
 
-* Tipificar al usuarios esperados según:
+* Tipificar al usuario según:
 	* Usuario novato
 	* Con conocimiento pero uso intermitente
 	* Experto y con uso frecuente del sistema (*Power user*) 
@@ -76,6 +84,14 @@ Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no
 * Tolerancia a errores (ej: tarea crítica en central nuclear)
 
 # Estilos de interacción
+
+## Estilos de interacción
+
+>* Manipulación directa
+>* Selección en menús
+>* Completado de formularios
+>* Lenguaje de mandatos
+>* Lenguaje natural
 
 ## Manipulación directa
 
@@ -137,7 +153,7 @@ Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no
 
 2.- Permite a los usuarios frecuentes utilizar accesos directos
 :   - A medida que la frecuencia de uso aumenta, también lo hacen los deseos del usuario para reducir el número de acciones y aumentar el ritmo de interacción.
-	- Acrónimos y abreviaturas, las teclas de función, los comandos ocultos, y macro instalaciones son muy útiles para un usuario experto.
+	- Acrónimos y abreviaturas, las teclas de función, los comandos ocultos, y macros son muy útiles para un usuario experto.
 
 -------------------------------------------------------------------------------
 
@@ -155,7 +171,7 @@ Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no
 
 -------------------------------------------------------------------------------
 
-5.- Previene errores
+5.- Prevén errores
 :   - En la medida de lo posible, diseñar el sistema para que el usuario no ocasione un grave error.
 	- Por ejemplo con acciones deshabilitadas.
 	- Si aparece un error, el sistema debería ser capaz de detectar el error y ofrecer de manera sencilla y comprensible la identificación del error.
@@ -192,7 +208,7 @@ Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no
 
 -------------------------------------------------------------------------------
 
-## Tiempos de respuesta (recomedaciones)
+## Tiempos de respuesta (recomendaciones)
 
 * **Es un elemento más de diseño:**
 	* Lo normal es: mejor cuanto menor sean los tiempos de espera
@@ -202,5 +218,5 @@ Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no
 * Para esperas de más de 2 segundos se necesita enseñar algún feedback
 * Para esperas de más de 10 segundos, enseñar el proceso
 
-* **Lo peor son retardos inesperadas**. Hay que controlar la varianza de los tiempos de espera para la misma acción
+* **Lo peor son retardos inesperados**. Hay que controlar la varianza de los tiempos de espera para la misma acción
 		
