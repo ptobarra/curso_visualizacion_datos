@@ -42,7 +42,7 @@ Si nos centramos más en la práctica. Se puede medir y evaluar:
 
 -------------------------------------------------------------------------------
 
-* Hay que utlizar un desarrollo iterativo
+* Hay que utilizar un desarrollo iterativo
 	* Se va en espiral:
 		* Requisitos -> Diseño -> Implementación -> Pruebas -> ...
 	* Basado en prototipos y/o funcionalidades
@@ -55,7 +55,7 @@ Si nos centramos más en la práctica. Se puede medir y evaluar:
 
 ## Conocer al usuario
 
-* Tipicar al usuarios esperados según:
+* Tipificar al usuarios esperados según:
 	* Usuario novato
 	* Con conocimiento pero uso intermitente
 	* Experto y con uso frecuente del sistema (*Power user*) 
@@ -69,10 +69,10 @@ Si nos centramos más en la práctica. Se puede medir y evaluar:
 Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no funcionales*
 
 * Identificar las tares de Alto nivel y descomponerlas en tareas de bajo nivel
-* Frecuencia de cada tarea (ej: poco usadas a menus)
+* Frecuencia de cada tarea (ej: poco usadas a menús)
 * Lenguaje del dominio de aplicación (menús, colores)
 * Tiempos que hay que satisfacer (ej: tiempo real, batch)
-* Sesión típica de trabajo (ej: uso esporádico, 8 horas al dia)
+* Sesión típica de trabajo (ej: uso esporádico, 8 horas al día)
 * Tolerancia a errores (ej: tarea crítica en central nuclear)
 
 # Estilos de interacción
@@ -82,8 +82,8 @@ Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no
 * **\+** Representa visualmente conceptos visuales
 * **\+** Fácil aprendizaje
 * **\+** Fácil memorización
-* **\+** Permite eviter errores
-* **\+** Alenta la exploración
+* **\+** Permite evitar errores
+* **\+** Alienta la exploración
 * **\+** Da mejor satisfacción subjetiva
 
 * **\-** Puede ser más difícil de programar
@@ -149,8 +149,8 @@ Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no
 
 4.- Diseña los diálogos para producir la consecución de la tarea
 :   - Acciones secuenciales debe organizarse en grupos con un comienzo, un nudo y un final.
-	- Cuando se termian la acción se tiene que informar adecuadamente al usuairo.
-	- Dichos diálogos fomentan la sensación de logro, generando alivioy sitio en las mentes para otro grupo de acciones.
+	- Cuando se terminan la acción se tiene que informar adecuadamente al usuario.
+	- Dichos diálogos fomentan la sensación de logro, generando alivio y sitio en las mentes para otro grupo de acciones.
 	- Por ejemplo: compras por internet, instaladores.
 
 -------------------------------------------------------------------------------
@@ -158,7 +158,7 @@ Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no
 5.- Previene errores
 :   - En la medida de lo posible, diseñar el sistema para que el usuario no ocasione un grave error.
 	- Por ejemplo con acciones deshabilitadas.
-	- Si aparece un error, el sistema debería ser capaz de detectar el error y ofrecer de manera sencilla y comprensible la identifiación del error.
+	- Si aparece un error, el sistema debería ser capaz de detectar el error y ofrecer de manera sencilla y comprensible la identificación del error.
 
 6.- Permite deshacer las acciones fácilmente
 :   - Esta característica alivia la ansiedad, ya que el usuario sabe que los errores se pueden deshacer, y por lo tanto, alienta la exploración de opciones desconocidas.
@@ -183,8 +183,8 @@ Engloba lo que en educción de requisitos se llama: *Requisitos funcionales y no
 
 ## Tiempos de respuesta
 
-* Acciones percividas como instantáneas: **50 - 150 ms** ()
-* Acciones fecuentes y simples, percividas como inmediatas: **menos de 1 segundo**
+* Acciones percibidas como instantáneas: **50 - 150 ms** ()
+* Acciones frecuentes y simples, percibidas como inmediatas: **menos de 1 segundo**
 * Acciones comunes: **2-4 segundos**
 * Acciones complejas: **8-12 segundos**
 
