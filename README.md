@@ -20,9 +20,11 @@
 ## Curso de D3.js
 
 * [Fundamentos Web](curso_d3/fundamentos_web.html)
+* [Crear con datos](curso_d3/crear_con_datos.html)
 
 ### Recursos
 
 * [Plantilla](curso_d3/plantilla/) -- [plantilla.zip](curso_d3/plantilla.zip)
-
+* Datos:
+	* [cars](curso_d3/data/cars.csv)
 
