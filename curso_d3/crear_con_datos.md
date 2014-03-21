@@ -213,6 +213,15 @@ Varios cambios encadenados
 * Añade al CSS una regla que coloree de rojo los párrafos con clase **impar**
 * Repite le ejercicio 5 pero esta vez añade una clase **impar** a los párrafos impares.
 
+## Ejercicio 7 ##
+
+* En vez de añadir párrafos añade **div** para crear un diagrama de barras horizontal
+* La **altura** de los divs debe ser 20px
+* El **margen** de 1px
+* El **color de fondo** debe ser **steelblue**
+
+# Cargar datos de un fichero
+
 ## Cargar datos de un fichero
 
 * La carga es **asíncrona**, se utiliza un **callback**:
