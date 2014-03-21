@@ -238,6 +238,57 @@ d3.select(&#39;body&#39;)
 <li>Crea un párrafo con el número de items leídos</li>
 </ul>
 </section></section>
+<section><section id="pintar-en-svg" class="titleslide slide level1"><h1>Pintar en SVG</h1></section><section id="contenedor-svg" class="slide level2">
+<h1>Contenedor SVG</h1>
+<ul>
+<li><p>Crear el elemento:</p>
+<pre><code>var svg = d3.select(&quot;body&quot;).append(&quot;svg&quot;);</code></pre></li>
+<li><p>Siempre con tamaño</p>
+<pre><code>//Se suelen utilizar: Width y height
+var width = 800;
+var height = 600;
+
+svg.attr(&quot;width&quot;, width)
+   .attr(&quot;height&quot;, height);</code></pre></li>
+<li><p>O todo encadenado:</p>
+<pre><code>var svg = d3.select(&quot;body&quot;)
+    .append(&quot;svg&quot;)
+    .attr(&quot;width&quot;, width)
+    .attr(&quot;height&quot;, height); </code></pre></li>
+</ul>
+</section><section id="crear-formas" class="slide level2">
+<h1>Crear formas</h1>
+<ul>
+<li><p>Selección &gt; Data Binding &gt; Enter &gt; Append</p>
+<pre><code>var datos = [10,20,30,40,50];
+
+var circles = svg.selectAll(&quot;circle&quot;)
+    .data(datos)
+    .enter()
+    .append(&quot;circle&quot;);
+
+circles.attr(&quot;cx&quot;, function(d, i) {
+               return (i * 100) + 20;
+            })
+    .attr(&quot;cy&quot;, height/2)
+    .attr(&quot;r&quot;, function(d) {return d;});</code></pre></li>
+</ul>
+</section><section id="ejercicio-9" class="slide level2">
+<h1>Ejercicio 9</h1>
+<ul>
+<li>Colorea los círculos de diferente color:
+<ul>
+<li>El borde (<strong>stroke</strong>) todos iguales de <strong>bluesteal</strong></li>
+<li>El relleno (<strong>fill</strong>) sin color (<strong>none</strong>)</li>
+<li>El ancho del borde (<strong>stroke-width</strong>) directamente proporcional a su dato</li>
+</ul></li>
+</ul>
+</section><section id="ejercicio-10" class="slide level2">
+<h1>Ejercicio 10</h1>
+<ul>
+<li>Haz un diagrama de barras en SVG con los pesos de los coches del dataset “cars”</li>
+</ul>
+</section></section>
     </div>
   </div>
 

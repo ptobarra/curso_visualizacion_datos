@@ -237,3 +237,54 @@ Varios cambios encadenados
 * Carga los datos de **"cars.csv"**
 * Crea un párrafo con el número de items leídos
 
+# Pintar en SVG
+
+## Contenedor SVG
+
+* Crear el elemento:
+
+		var svg = d3.select("body").append("svg");
+
+* Siempre con tamaño
+
+		//Se suelen utilizar: Width y height
+		var width = 800;
+		var height = 600;
+
+		svg.attr("width", width)
+		   .attr("height", height);
+
+* O todo encadenado:
+
+		var svg = d3.select("body")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height); 
+
+## Crear formas
+
+* Selección > Data Binding > Enter > Append
+
+		var datos = [10,20,30,40,50];
+
+		var circles = svg.selectAll("circle")
+            .data(datos)
+            .enter()
+            .append("circle");
+
+		circles.attr("cx", function(d, i) {
+		               return (i * 100) + 20;
+		            })
+			.attr("cy", height/2)
+			.attr("r", function(d) {return d;});
+
+## Ejercicio 9 ##
+
+* Colorea los círculos de diferente color:
+	* El borde (**stroke**) todos iguales de **bluesteal**
+	* El relleno (**fill**) sin color (**none**)
+	* El ancho del borde (**stroke-width**) directamente proporcional a su dato 
+
+## Ejercicio 10 ##
+
+* Haz un diagrama de barras en SVG con los pesos de los coches del dataset "cars"
