@@ -232,7 +232,7 @@ Varios cambios encadenados
 		    
 		});
 
-## Ejercicio 7 ##
+## Ejercicio 8 ##
 
 * Carga los datos de **"cars.csv"**
 * Crea un párrafo con el número de items leídos
