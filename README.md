@@ -23,4 +23,6 @@
 
 ### Recursos
 
-* [Plantilla](curso_d3/plantilla/)
+* [Plantilla](curso_d3/plantilla/) -- [plantilla.zip](curso_d3/plantilla.zip)
+
+
