@@ -15,6 +15,11 @@
 
 * [Datos multivariados](s11_multivariado/s11_multivariado.html)
 
+### Transparencias de la sesión 13
+
+* [Datos temporales](s13_temporal_y_espacial/s13_temporal.html)
+* [Datos espaciales](s13_temporal_y_espacial/s13_espacial.html)
+
 <hr>
 
 ## Curso de D3.js

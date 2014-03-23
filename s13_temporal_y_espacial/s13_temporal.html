@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Juan Morales del Olmo" />
+  <title>Datos Temporales</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../rsc/reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+
+  <link rel="stylesheet" href="../rsc/reveal.js/css/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="../rsc/style.css"/>
+
+  <link rel="stylesheet" media="print" href="../rsc/reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="../rsc/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Datos Temporales</h1>
+    <h2 class="author">Juan Morales del Olmo</h2>
+    <h3 class="date">24 de marzo de 2014</h3>
+</section>
+
+<section><section id="datos-temporales" class="titleslide slide level1"><h1>Datos Temporales</h1></section><section id="conjuntos-de-datos-temporales" class="slide level2">
+<h1>Conjuntos de datos temporales</h1>
+<ul>
+<li><p><strong>Un conjunto de datos es temporal si al menos una de sus variables es temporal</strong></p></li>
+<li>El tiempo no es más que una variable cuantitativa pero:
+<ul>
+<li>Nos da la <strong>dirección de la causalidad</strong> si esta existe</li>
+<li>Es importante en la mayoría de escenarios</li>
+<li>Múltiples escalas que se usan indistintamente (segundos, días, semanas, quincenas, meses, …)</li>
+</ul></li>
+<li><p>Suele derivarse: (Medias móviles, Filtrado paso alto/bajo, T. Fourier, … )</p></li>
+</ul>
+</section><section id="según-subtipo-de-datos" class="slide level2">
+<h1>Según subtipo de datos</h1>
+<dl>
+<dt>Series temporales</dt>
+<dd>Datos registrados con una cadencia (stocks, sensores, historia)
+</dd>
+<dt>Eventos temporales</dt>
+<dd>Hay cierta relación temporal entre los datos (intervalos, eventos puntuales)
+</dd>
+</dl>
+</section></section>
+<section><section id="según-disposición" class="titleslide slide level1"><h1>Según Disposición</h1></section><section id="lineales" class="slide level2">
+<h1>Lineales</h1>
+<figure>
+<img src="../rsc/images/small-multiples.png" alt="De pasado a futuro" /><figcaption>De pasado a futuro</figcaption>
+</figure>
+</section><section id="cíclicos" class="slide level2">
+<h1>Cíclicos</h1>
+<ul>
+<li>Patrones repetidos</li>
+</ul>
+<iframe width="100%" height="800" src="http://prcweb.co.uk/lab/energy/" frameborder="1" allowfullscreen>
+<figure>
+<img src="../rsc/images/link.png" alt="http://prcweb.co.uk/lab/energy/" /><figcaption><a href="http://prcweb.co.uk/lab/energy/">http://prcweb.co.uk/lab/energy/</a></figcaption>
+</figure>
+</iframe>
+
+</section><section id="ramificados" class="slide level2">
+<h1>Ramificados</h1>
+<ul>
+<li>Facilita descripción y comparación</li>
+</ul>
+<figure>
+<img src="../rsc/images/gantt.png" alt="Gantt" /><figcaption>Gantt</figcaption>
+</figure>
+</section></section>
+<section><section id="visualizaciones" class="titleslide slide level1"><h1>Visualizaciones</h1></section><section id="diagrama-de-horizonte" class="slide level2">
+<h1>Diagrama de horizonte</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/1483226/" frameborder="1" allowfullscreen>
+<figure>
+<img src="../rsc/images/link.png" alt="http://bl.ocks.org/mbostock/raw/1483226/" /><figcaption><a href="http://bl.ocks.org/mbostock/raw/1483226/">http://bl.ocks.org/mbostock/raw/1483226/</a></figcaption>
+</figure>
+</iframe>
+
+</section><section id="gapminder" class="slide level2">
+<h1>Gapminder</h1>
+<figure>
+<img src="../rsc/images/gapminder.png" alt="http://www.gapminder.org/" /><figcaption><a href="http://www.gapminder.org/">http://www.gapminder.org/</a></figcaption>
+</figure>
+</section><section id="vista-de-calendario" class="slide level2">
+<h1>Vista de calendario</h1>
+<ul>
+<li>Variación de heatmap</li>
+</ul>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/4063318" frameborder="1" allowfullscreen>
+<figure>
+<img src="../rsc/images/link.png" alt="http://bl.ocks.org/mbostock/4063318" /><figcaption><a href="http://bl.ocks.org/mbostock/4063318">http://bl.ocks.org/mbostock/4063318</a></figcaption>
+</figure>
+</iframe>
+
+</section><section id="time-searcher" class="slide level2">
+<h1>Time Searcher</h1>
+<figure>
+<img src="../rsc/images/timesearcher.png" alt="TimeSearcher [Hochheiser @ HCIL]" /><figcaption>TimeSearcher [Hochheiser @ HCIL]</figcaption>
+</figure>
+</section><section id="life-lines" class="slide level2">
+<h1>Life Lines</h1>
+<figure>
+<img src="../rsc/images/lifelines2.png" alt="LifeLines2 [David Wang @ HCIL]" /><figcaption>LifeLines2 [David Wang @ HCIL]</figcaption>
+</figure>
+</section></section>
+    </div>
+  </div>
+
+  <script src="../rsc/reveal.js/lib/js/head.min.js"></script>
+  <script src="../rsc/reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        theme: 'simple', // available themes are in /css/theme
+        transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '../rsc/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+//          { src: '../rsc/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: '../rsc/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>

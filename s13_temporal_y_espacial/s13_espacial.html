@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Juan Morales del Olmo" />
+  <title>Datos Temporales</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../rsc/reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+
+  <link rel="stylesheet" href="../rsc/reveal.js/css/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="../rsc/style.css"/>
+
+  <link rel="stylesheet" media="print" href="../rsc/reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="../rsc/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Datos Temporales</h1>
+    <h2 class="author">Juan Morales del Olmo</h2>
+    <h3 class="date">24 de marzo de 2014</h3>
+</section>
+
+<section><section id="datos-espaciales" class="titleslide slide level1"><h1>Datos Espaciales</h1></section><section id="conjuntos-de-datos-espaciales" class="slide level2">
+<h1>Conjuntos de datos espaciales</h1>
+<ul>
+<li><strong>Un conjunto de datos es espacial si la posición viene dada por los datos</strong></li>
+</ul>
+<dl>
+<dt>1D, 2D o 3D</dt>
+<dd><p>Ligado a Visualización científica</p>
+</dd>
+<dt>GeoEspaciales</dt>
+<dd><p>Mapas. Viene de atrás (Cartografía)</p>
+</dd>
+</dl>
+</section><section id="mapas" class="slide level2">
+<h1>Mapas</h1>
+<ul>
+<li><p>La visualización fundamental para datos Geoespaciales es el <strong>mapa</strong></p></li>
+<li>En un mapa hay fenómenos:
+<ul>
+<li>puntuales (lugar de encuentro)</li>
+<li>lineales (cables submarinos)</li>
+<li>de área (lagos)</li>
+<li>superficiales (montañas que también tienen altura)</li>
+</ul></li>
+</ul>
+</section></section>
+<section><section id="proyecciones" class="titleslide slide level1"><h1>Proyecciones</h1></section><section id="tipos-proyecciones" class="slide level2">
+<h1>Tipos proyecciones</h1>
+<p>La esfera no es una <strong>Superficie Gausiana</strong> así que no se puede proyectar en un plano sin provocar deformaciones.</p>
+<ul>
+<li>Cilíndricas</li>
+<li>Planares</li>
+<li>Cónica</li>
+</ul>
+</section><section class="slide level2">
+
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3711652/" frameborder="1" allowfullscreen>
+<figure>
+<img src="../rsc/images/link.png" alt="http://bl.ocks.org/mbostock/raw/3711652/" /><figcaption><a href="http://bl.ocks.org/mbostock/raw/3711652/">http://bl.ocks.org/mbostock/raw/3711652/</a></figcaption>
+</figure>
+</iframe>
+
+</section></section>
+<section><section id="variables-visuales-para-datos-espaciales" class="titleslide slide level1"><h1>Variables visuales para datos espaciales</h1></section><section id="puntos" class="slide level2">
+<h1>Puntos</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/5180185/" frameborder="1" allowfullscreen>
+<figure>
+<img src="../rsc/images/link.png" alt="http://bl.ocks.org/mbostock/raw/5180185/" /><figcaption><a href="http://bl.ocks.org/mbostock/raw/5180185/">http://bl.ocks.org/mbostock/raw/5180185/</a></figcaption>
+</figure>
+</iframe>
+
+</section><section id="líneas" class="slide level2">
+<h1>Líneas</h1>
+<figure>
+<img src="../rsc/images/snowden.png" alt="Ruta de Snowden" /><figcaption><a href="http://bl.ocks.org/mbostock/5851933">Ruta de Snowden</a></figcaption>
+</figure>
+</section><section class="slide level2">
+
+<iframe width="100%" height="800" src="http://workshop.chromeexperiments.com/projects/armsglobe/" frameborder="1" allowfullscreen>
+<figure>
+<img src="../rsc/images/link.png" alt="http://workshop.chromeexperiments.com/projects/armsglobe/" /><figcaption><a href="http://workshop.chromeexperiments.com/projects/armsglobe/">http://workshop.chromeexperiments.com/projects/armsglobe/</a></figcaption>
+</figure>
+</iframe>
+
+</section><section id="líneas---edge-bundling" class="slide level2">
+<h1>Líneas - Edge Bundling</h1>
+<figure>
+<img src="../rsc/images/edgebundling.png" alt="Reducción de complejidad de arcos" /><figcaption><a href="http://vis.stanford.edu/papers/divided-edge-bundling">Reducción de complejidad de arcos</a></figcaption>
+</figure>
+</section><section id="áreas---choropleth" class="slide level2">
+<h1>Áreas - Choropleth</h1>
+<figure>
+<img src="../rsc/images/choropleth.png" alt="Choropleth" /><figcaption><a href="http://bl.ocks.org/mbostock/4060606">Choropleth</a></figcaption>
+</figure>
+</section><section id="cartogramas---continuos" class="slide level2">
+<h1>Cartogramas - continuos</h1>
+<iframe width="100%" height="800" src="http://prag.ma/code/d3-cartogram/#natincrate/2011" frameborder="1" allowfullscreen>
+<figure>
+<img src="../rsc/images/link.png" alt="http://prag.ma/code/d3-cartogram/#natincrate/2011" /><figcaption><a href="http://prag.ma/code/d3-cartogram/#natincrate/2011">http://prag.ma/code/d3-cartogram/#natincrate/2011</a></figcaption>
+</figure>
+</iframe>
+
+</section><section id="cartogramas---no-continuo" class="slide level2">
+<h1>Cartogramas - No continuo</h1>
+<figure>
+<img src="../rsc/images/cartogram.png" alt="Cartogram" /><figcaption><a href="http://bl.ocks.org/mbostock/4055908">Cartogram</a></figcaption>
+</figure>
+</section></section>
+    </div>
+  </div>
+
+  <script src="../rsc/reveal.js/lib/js/head.min.js"></script>
+  <script src="../rsc/reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        theme: 'simple', // available themes are in /css/theme
+        transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '../rsc/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+//          { src: '../rsc/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: '../rsc/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>
