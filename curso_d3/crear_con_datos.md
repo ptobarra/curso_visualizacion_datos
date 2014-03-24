@@ -281,10 +281,10 @@ Varios cambios encadenados
 ## Ejercicio 9 ##
 
 * Colorea los círculos de diferente color:
-	* El borde (**stroke**) todos iguales de **bluesteal**
+	* El borde (**stroke**) todos iguales de **steelblue**
 	* El relleno (**fill**) sin color (**none**)
 	* El ancho del borde (**stroke-width**) directamente proporcional a su dato 
 
 ## Ejercicio 10 ##
 
-* Haz un diagrama de barras en SVG con los pesos de los coches del dataset "cars"
+* Haz un diagrama de barras **horizontal** en SVG con los pesos de los coches del dataset "cars"
