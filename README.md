@@ -20,6 +20,10 @@
 * [Datos temporales](s13_temporal_y_espacial/s13_temporal.html)
 * [Datos espaciales](s13_temporal_y_espacial/s13_espacial.html)
 
+### Transparencias de la sesión 15
+
+* [Redes y Jerarquías](s15_redes_y_jerarquías/s15_redes_jerarquías.html)
+
 <hr>
 
 ## Curso de D3.js

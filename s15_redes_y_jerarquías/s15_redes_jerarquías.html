@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Juan Morales del Olmo" />
+  <title>Redes y Jerarquías</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../rsc/reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+
+  <link rel="stylesheet" href="../rsc/reveal.js/css/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="../rsc/style.css"/>
+
+  <link rel="stylesheet" media="print" href="../rsc/reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="../rsc/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Redes y Jerarquías</h1>
+    <h2 class="author">Juan Morales del Olmo</h2>
+    <h3 class="date">24 de marzo de 2014</h3>
+</section>
+
+<section><section id="redes-y-jerarquías" class="titleslide slide level1"><h1>Redes y Jerarquías</h1></section><section id="datos-relacionales" class="slide level2">
+<h1>Datos Relacionales</h1>
+<ul>
+<li>Una red es un <strong>grafo</strong></li>
+<li><p>Una jerarquía es un <strong>árbol</strong>, que a su vez es un tipo de grafo (conexo, sin pesos y acíclico).</p></li>
+<li><p>Este tipo de dataset no se centra en la representación de los items y sus atributos sino en las <strong>relaciones</strong> que se establecen entre los items.</p></li>
+</ul>
+</section><section id="tipos-de-relaciones" class="slide level2">
+<h1>Tipos de relaciones</h1>
+<ul>
+<li class="fragment">Según su semántica:
+<ul>
+<li class="fragment">parte/sub-parte, padre/hijo, es-un</li>
+<li class="fragment">conectividad (como entre ciudades unidas por carreteras)</li>
+<li class="fragment">derivado-de (como en flujo de datos)</li>
+<li class="fragment">pertenencia a grupo</li>
+<li class="fragment">similitud entre items o entre atributos</li>
+</ul></li>
+<li class="fragment">Según su complejidad:
+<ul>
+<li class="fragment">unidireccional / bidireccional</li>
+<li class="fragment">con pesos / sin pesos</li>
+<li class="fragment">incierto / cierto</li>
+</ul></li>
+</ul>
+</section></section>
+<section><section id="arco-nodo" class="titleslide slide level1"><h1>Arco-Nodo</h1></section><section id="arco-nodo-1" class="slide level2">
+<h1>Arco-Nodo</h1>
+<ul>
+<li class="fragment">Se busca:
+<ul>
+<li class="fragment"><strong>Minimizar arcos que se cruzan</strong></li>
+<li class="fragment">Minimizar el área total de dibujo</li>
+<li class="fragment">Mantener un buen <em>aspect ratio</em></li>
+</ul></li>
+</ul>
+<ul>
+<li class="fragment">Se puede buscar:
+<ul>
+<li class="fragment">Centrar algún nodo concreto</li>
+<li class="fragment">Posición fija de los nodos</li>
+<li class="fragment">Posicionar hermanos en la misma línea</li>
+</ul></li>
+</ul>
+</section><section id="árbol-lineal" class="slide level2">
+<h1>Árbol lineal</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4339184/" frameborder="1" allowfullscreen>
+<figure>
+<img src="../rsc/images/link.png" alt="http://bl.ocks.org/mbostock/raw/4339184/" /><figcaption><a href="http://bl.ocks.org/mbostock/raw/4339184/">http://bl.ocks.org/mbostock/raw/4339184/</a></figcaption>
+</figure>
+</iframe>
+
+</section><section id="árbol-circular" class="slide level2">
+<h1>Árbol circular</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063550/" frameborder="1" allowfullscreen>
+<figure>
+<img src="../rsc/images/link.png" alt="http://bl.ocks.org/mbostock/raw/4063550/" /><figcaption><a href="http://bl.ocks.org/mbostock/raw/4063550/">http://bl.ocks.org/mbostock/raw/4063550/</a></figcaption>
+</figure>
+</iframe>
+
+</section><section id="dirigido-por-fuerzas" class="slide level2">
+<h1>Dirigido por fuerzas</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4062045/" frameborder="1" allowfullscreen>
+<figure>
+<img src="../rsc/images/link.png" alt="http://bl.ocks.org/mbostock/raw/4062045/" /><figcaption><a href="http://bl.ocks.org/mbostock/raw/4062045/">http://bl.ocks.org/mbostock/raw/4062045/</a></figcaption>
+</figure>
+</iframe>
+
+
+</section></section>
+<section><section id="space-filling" class="titleslide slide level1"><h1>Space-filling</h1></section><section id="space-filling-1" class="slide level2">
+<h1>Space-filling</h1>
+<ul>
+<li>Se busca:
+<ul>
+<li>Aprovechar al máximo el espacio</li>
+</ul></li>
+</ul>
+</section><section id="treemap" class="slide level2">
+<h1>Treemap</h1>
+<iframe width="100%" height="800" src="http://mbostock.github.io/d3/talk/20111018/treemap.html" frameborder="1" allowfullscreen>
+<figure>
+<img src="../rsc/images/link.png" alt="http://mbostock.github.io/d3/talk/20111018/treemap.html" /><figcaption><a href="http://mbostock.github.io/d3/talk/20111018/treemap.html">http://mbostock.github.io/d3/talk/20111018/treemap.html</a></figcaption>
+</figure>
+</iframe>
+
+</section><section id="sunburst" class="slide level2">
+<h1>Sunburst</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/4063423" frameborder="1" allowfullscreen>
+<figure>
+<img src="../rsc/images/link.png" alt="http://bl.ocks.org/mbostock/4063423" /><figcaption><a href="http://bl.ocks.org/mbostock/4063423">http://bl.ocks.org/mbostock/4063423</a></figcaption>
+</figure>
+</iframe>
+
+</section><section id="matrices-de-adyacencia" class="slide level2">
+<h1>Matrices de adyacencia</h1>
+<iframe width="100%" height="800" src="http://bost.ocks.org/mike/miserables/" frameborder="1" allowfullscreen>
+<figure>
+<img src="../rsc/images/link.png" alt="http://bost.ocks.org/mike/miserables/" /><figcaption><a href="http://bost.ocks.org/mike/miserables/">http://bost.ocks.org/mike/miserables/</a></figcaption>
+</figure>
+</iframe>
+
+
+</section></section>
+    </div>
+  </div>
+
+  <script src="../rsc/reveal.js/lib/js/head.min.js"></script>
+  <script src="../rsc/reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        theme: 'simple', // available themes are in /css/theme
+        transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '../rsc/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+//          { src: '../rsc/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: '../rsc/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>
