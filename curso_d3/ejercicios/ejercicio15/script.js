@@ -1,7 +1,7 @@
 /**
  * Scatter plot de "weight (lb)" (eje X) y "0-60 mph (s)" (eje Y)
  * 
- * Crírculos con radio mapeando el "power (hp)"
+ * Círculos con radio mapeando el "power (hp)"
  * 
  * Color mapeando el número de cilindros "cylinders"
  * 

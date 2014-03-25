@@ -30,7 +30,7 @@ var render = function(datos) {
     // Generar el histograma con 20 bandas
     var datosHistograma = d3.layout.histogram() // CLOUSURE: devuelve una función que se ejecuta inmediatamente
 	.frequency(true)    // Si es falso calcula la probabilidad
-	.bins(x.ticks(20))  // x.ticks devuelve un array con 20 puntos del dominio equiespaciados
+	.bins(x.ticks(20))  // x.ticks devuelve un array con 20 puntos del dominio equiespaciados y "humanos". 
 	(weights);
 
     var y = d3.scale.linear()

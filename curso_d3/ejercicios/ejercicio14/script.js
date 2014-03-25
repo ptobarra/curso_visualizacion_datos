@@ -37,7 +37,7 @@ var render = function(datos) {
 
     var datosHistograma = d3.layout.histogram() 
 	.frequency(true)    // Prueba a cambiarlo
-	.bins(x.ticks(20))  
+	.bins(x.ticks(20))  // Prueba a poner sólo .bins(20)
 	(weights);
 
     var y = d3.scale.linear()

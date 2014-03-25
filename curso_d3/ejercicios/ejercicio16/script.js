@@ -2,10 +2,10 @@
  * 
  * Utiliza la metaclase ":hover" para dibujar un stroke 
  * 
- * Cuando se pasa por encima con el ratón peso y velocidad se ven 
+ * Cuando se pasa por encima con el ratón, peso y velocidad se ven 
  * en un "p" arriba de la gráfica 
  * 
- * Cuando se clica ( on("click", callback) ) en un coche se muestra un
+ * Cuando se pincha ( on("click", callback) ) en un coche se muestra un
  * mensaje con el mandato "alert" que tiene el número de cilindros del
  * coche
  * 
