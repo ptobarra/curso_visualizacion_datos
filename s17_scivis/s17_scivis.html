@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Juan Morales del Olmo" />
+  <title>Visualización científica</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../rsc/reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+
+  <link rel="stylesheet" href="../rsc/reveal.js/css/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="../rsc/style.css"/>
+
+  <link rel="stylesheet" media="print" href="../rsc/reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="../rsc/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Visualización científica</h1>
+    <h2 class="author">Juan Morales del Olmo</h2>
+    <h3 class="date">27 de marzo de 2014</h3>
+</section>
+
+<section><section id="visualización-científica" class="titleslide slide level1"><h1>Visualización científica</h1></section><section id="por-qué-la-separación" class="slide level2">
+<h1>¿Por qué la separación?</h1>
+<ul>
+<li><p>Dos comunidades científicas</p></li>
+<li>InfoVis
+<ul>
+<li>Origen en interacción hombre-máquina</li>
+<li>Background en <strong>factores humanos</strong></li>
+</ul></li>
+<li>SciVis
+<ul>
+<li>Origen en Computer Graphics</li>
+<li>Background en <strong>3D</strong></li>
+</ul></li>
+</ul>
+</section><section id="datos-espaciales" class="slide level2">
+<h1>Datos espaciales</h1>
+<ul>
+<li>Principalmente son datos espaciales (2D o 3D)</li>
+<li>A veces tienen una componente temporal</li>
+</ul>
+</section><section id="espacio-de-diseño" class="slide level2">
+<h1>Espacio de Diseño</h1>
+<ul>
+<li>Suelen ser fáciles de diseñar e interpretar
+<ul>
+<li>La posición viene impuesta por los datos</li>
+<li>Suelen representar objetos físicos plausibles</li>
+<li>Estamos acostumbrados a relacionarnos con objetos 3D</li>
+</ul></li>
+</ul>
+</section></section>
+<section><section id="datos-2d" class="titleslide slide level1"><h1>Datos 2D</h1></section><section id="valor-por-posición-imagen" class="slide level2">
+<h1>1 valor por posición: Imagen</h1>
+<figure>
+<img src="../rsc/images/fibsem.jpg" alt="FIB/SEM" /><figcaption>FIB/SEM</figcaption>
+</figure>
+</section><section id="valor-por-posición-isovalores" class="slide level2">
+<h1>1 valor por posición: IsoValores</h1>
+<figure>
+<img src="../rsc/images/contorno.jpg" alt="Threshold -&gt; Contorno" /><figcaption>Threshold -&gt; Contorno</figcaption>
+</figure>
+</section><section id="valor-de-elevación-por-posición-superficie" class="slide level2">
+<h1>1 valor de elevación por posición: Superficie</h1>
+<figure>
+<img src="../rsc/images/terreno.jpg" alt="Generación de terreno" /><figcaption>Generación de terreno</figcaption>
+</figure>
+</section><section id="n-valores-por-posición-glifos-en-3d" class="slide level2">
+<h1>n valores por posición: glifos en 3D</h1>
+<figure>
+<img src="../rsc/images/tensores.jpg" alt="Tensores" /><figcaption>Tensores</figcaption>
+</figure>
+</section></section>
+<section><section id="datos-3d" class="titleslide slide level1"><h1>Datos 3D</h1></section><section id="superficies-explícitas" class="slide level2">
+<h1>Superficies explícitas</h1>
+<ul>
+<li>Vértices y facetas o curvas paramétricas</li>
+<li>Renderizado utilizando el cauce gráfico estándar</li>
+</ul>
+</section><section class="slide level2">
+
+<figure>
+<img src="../rsc/images/avion.jpg" alt="Presión en fuselaje" /><figcaption>Presión en fuselaje</figcaption>
+</figure>
+</section><section id="datos-volumétricos" class="slide level2">
+<h1>Datos volumétricos</h1>
+<ul>
+<li>Valores Cuantitativos en una matriz de 3D
+<ul>
+<li>Imágenes tridimensionales.
+<ul>
+<li>ej: Imágenes de microscopio</li>
+</ul></li>
+<li>Resultado de simulaciones.
+<ul>
+<li>ej: Temperatura en una sala</li>
+</ul></li>
+</ul></li>
+</ul>
+</section><section id="planos-de-corte" class="slide level2">
+<h1>Planos de corte</h1>
+<figure>
+<img src="../rsc/images/espina.png" alt="Planos en 2D y 3D" /><figcaption>Planos en 2D y 3D</figcaption>
+</figure>
+</section><section id="iso-superficies" class="slide level2">
+<h1>Iso-superficies</h1>
+<figure>
+<img src="../rsc/images/dendrita.png" alt="Threshold y mallado" /><figcaption>Threshold y mallado</figcaption>
+</figure>
+</section><section class="slide level2">
+
+<figure>
+<img src="../rsc/images/marching_cubes.jpg" alt="Algoritmo - Marching Cubes" /><figcaption>Algoritmo - Marching Cubes</figcaption>
+</figure>
+</section><section id="renderizado-volumétrico-directo" class="slide level2">
+<h1>Renderizado volumétrico directo</h1>
+<ul>
+<li>Definir una función de transferencia (colores y opacidad)</li>
+<li>Dos técnicas
+<ul>
+<li>Forward mapping: Proyectar cada voxel al plano de cámara</li>
+<li>Inverse mapping: Ray casting</li>
+</ul></li>
+</ul>
+</section><section class="slide level2">
+
+<figure>
+<img src="../rsc/images/volume_rendering.jpg" alt="Visible Human Project" /><figcaption>Visible Human Project</figcaption>
+</figure>
+</section><section class="slide level2">
+
+<figure>
+<img src="../rsc/images/visible_human.jpg" alt="Visible Human Project" /><figcaption>Visible Human Project</figcaption>
+</figure>
+</section><section id="superficies-implícitas" class="slide level2">
+<h1>Superficies Implícitas</h1>
+<ul>
+<li>Se definen con una función paramétrica</li>
+<li>La superficie definida es la que marcan los valores 0</li>
+<li>Ventajas a la hora de modelar superficies
+<ul>
+<li>ej: Metabolas</li>
+</ul></li>
+<li>A la hora de visualizarlos son volúmenes.
+<ul>
+<li>Marching cubes con threshold 0</li>
+<li>Renderizado volumétrico</li>
+</ul></li>
+</ul>
+</section><section class="slide level2">
+
+<figure>
+<img src="../rsc/images/Metaballs.png" alt="Metabolas" /><figcaption>Metabolas</figcaption>
+</figure>
+</section></section>
+<section><section id="datos-dinámicos" class="titleslide slide level1"><h1>Datos dinámicos</h1></section><section id="simulaciones-de-fluídos" class="slide level2">
+<h1>Simulaciones de fluídos</h1>
+<ul>
+<li>La gran mayoría son <strong>simulaciones de fluídos</strong></li>
+<li>Un volumen de vectores por cada instante de tiempo</li>
+<li>El tiempo se suele mapear con transiciones</li>
+<li>Tipos de visualizaciones
+<ul>
+<li>Fotorealista</li>
+<li>Glifos: flechas o tensores</li>
+<li>Path Lines</li>
+<li>Partículas</li>
+<li>Line Integral Convolution</li>
+</ul></li>
+</ul>
+</section><section id="fotorealista" class="slide level2">
+<h1>Fotorealista</h1>
+<figure>
+<img src="../rsc/images/real_flow.jpg" alt="Real Flow" /><figcaption>Real Flow</figcaption>
+</figure>
+</section><section id="glifos" class="slide level2">
+<h1>Glifos</h1>
+<video src="../rsc/videos/venas.webm" controls></video>
+
+</section><section id="path-lines" class="slide level2">
+<h1>Path Lines</h1>
+<video src="../rsc/videos/streamline.webm" controls></video>
+
+</section><section id="partículas" class="slide level2">
+<h1>Partículas</h1>
+<video src="../rsc/videos/flujo-colores.webm" controls></video>
+
+</section><section id="line-integral-convolution" class="slide level2">
+<h1>Line Integral Convolution</h1>
+<figure>
+<img src="../rsc/images/LIC.jpg" alt="Textura aleatoria deformada" /><figcaption>Textura aleatoria deformada</figcaption>
+</figure>
+</section></section>
+<section><section id="percepción-en-scivis" class="titleslide slide level1"><h1>Percepción en SciVis</h1></section><section id="d-justificado" class="slide level2">
+<h1>3D Justificado</h1>
+<ul>
+<li><p>La necesidad de entender estructuras tridimensionales justifica el uso del 3D al 100%</p></li>
+<li>Recordemos los problemas:
+<ul>
+<li>Oclusiones</li>
+<li>Distorsión por perspectiva</li>
+<li>Dificultad para determinar la distancia
+<ul>
+<li>Estero alivia un poco… pero aun mucho mejor el plano</li>
+</ul></li>
+</ul></li>
+</ul>
+</section><section id="colores" class="slide level2">
+<h1>Colores</h1>
+<ul>
+<li>Se tiende a abusar de la escala <strong>arco iris</strong></li>
+</ul>
+<figure>
+<img src="../rsc/images/escalas-color.png" alt="Micro estructuras VS Macro estructuras" /><figcaption>Micro estructuras VS Macro estructuras</figcaption>
+</figure>
+</section></section>
+    </div>
+  </div>
+
+  <script src="../rsc/reveal.js/lib/js/head.min.js"></script>
+  <script src="../rsc/reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        theme: 'simple', // available themes are in /css/theme
+        transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '../rsc/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+//          { src: '../rsc/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: '../rsc/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>

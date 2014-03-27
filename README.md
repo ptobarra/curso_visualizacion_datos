@@ -24,6 +24,10 @@
 
 * [Redes y Jerarquías](s15_redes_y_jerarquías/s15_redes_jerarquías.html)
 
+### Transparencias de la sesión 17
+
+* [Visualización científica](s17_scivis/s17_scivis.html)
+
 <hr>
 
 ## Curso de D3.js
