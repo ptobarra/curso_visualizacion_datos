@@ -1,4 +1,4 @@
-# Práctica 2: Creación de una herramienta de visualización interactivaxs
+# Práctica 2: Creación de una herramienta de visualización interactiva
 
 ## Asignatura: Visualización de Datos 
 
@@ -38,3 +38,17 @@ formular nuevas hipótesis sobre comportamientos observados.
   items**. Se valorará positivamente la combinación de diferentes
   tipos de datos, como puede ser datos multidimensionales, redes,
   jerarquías, datos espaciales o datos temporales.
+
+## Memoria
+
+Con el código de la práctica se entregará una pequeña memoria, de no
+más de dos caras de extensión con los siguientes apartados:
+
+Descripción de los datos
+:    Hay que describir los datos utilizados en la herramienta, incluyendo procedencia, tipología (multivariados, redes, jerarquías, espaciales y/o temporales), número de items y significado de cada variable.
+
+Análisis que permite
+:    Vuestra herramienta debe facilitar el análisis de los datos elegidos. En este apartado se describirán qué preguntas son las que el usuario/analista será capaz de responder usando la herramienta. 
+
+Decisiones de diseño
+:    Se entiende que durante el proceso de diseño de la herramienta habéis tomado una serie de decisiones más o menos meditadas. Esas decisiones estarán guiadas en base a los datos y a los análisis que va a facilitar. En este apartado se pide una descripción de las características que habéis incorporado a la herramienta y con qué fin, además de las características que habéis dejando fuera de la implementación final y por qué han sido desechadas.   
