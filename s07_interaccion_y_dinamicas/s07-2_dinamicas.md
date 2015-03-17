@@ -1,6 +1,6 @@
 % Dinámicas en visual analytics
 % Juan Morales del Olmo
-% 20 de marzo de 2014
+% 17 de marzo de 2015
 
 # Dinámicas para el análisis visual
 
