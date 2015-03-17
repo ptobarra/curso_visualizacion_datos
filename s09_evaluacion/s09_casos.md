@@ -30,7 +30,19 @@
 
 ##
 
+![Mortalidad - Florence Nightingale](../rsc/images/Nightingale-mortality.jpg)
+
+##
+
+![Cólera - John Snow](../rsc/images/Snow-cholera-map-1.jpg)
+
+##
+
 ![Campaña Rusa de Napoleón](../rsc/images/Minard_Napoleon.jpg)
 
 ##
 ![[Gapminder](http://www.gapminder.org/videos/hans-rosling-ted-talk-2007-seemingly-impossible-is-possible/)](../rsc/images/gapminder.png)
+
+##
+
+![[Litros Ebro](https://twitter.com/search?f=realtime&q=%40atlante83%20%40crispamares&src=typd)](../rsc/images/litros.png)
