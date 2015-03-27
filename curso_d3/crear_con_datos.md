@@ -155,21 +155,6 @@ Primer parámetro son los **datos** segundo parámetro los **índices**
 
 ## Bind 5 ##
 
-Primer parámetro son los **datos** segundo parámetro los **índices**
-
-	var datos = [1,10,20,30,40,50];
-	var indices = ["a", "b", "c", "d", "e", "f"]
-	
-	d3.select('body')
-	    .selectAll("p")
-	    .data(datos, indices)  // Aquí se ponen los índices
-	   .enter()
-	    .append("p")
-	    .text(function(d, i){return "Párrafo " + i;});
-    
-
-## Bind 6 ##
-
 Varios cambios encadenados
 
 	var datos = [1,10,20,30,40,50];

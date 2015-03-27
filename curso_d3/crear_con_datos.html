@@ -158,18 +158,6 @@ d3.select(&#39;body&#39;)
     .text(function(d, i){return &quot;Párrafo &quot; + String(i);});</code></pre>
 </section><section id="bind-5" class="slide level2">
 <h1>Bind 5</h1>
-<p>Primer parámetro son los <strong>datos</strong> segundo parámetro los <strong>índices</strong></p>
-<pre><code>var datos = [1,10,20,30,40,50];
-var indices = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;]
-
-d3.select(&#39;body&#39;)
-    .selectAll(&quot;p&quot;)
-    .data(datos, indices)  // Aquí se ponen los índices
-   .enter()
-    .append(&quot;p&quot;)
-    .text(function(d, i){return &quot;Párrafo &quot; + i;});</code></pre>
-</section><section id="bind-6" class="slide level2">
-<h1>Bind 6</h1>
 <p>Varios cambios encadenados</p>
 <pre><code>var datos = [1,10,20,30,40,50];
 
