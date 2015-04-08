@@ -27,7 +27,7 @@
 <section>
     <h1 class="title">Datos Multivariados</h1>
     <h2 class="author">Juan Morales del Olmo</h2>
-    <h3 class="date">24 de marzo de 2014</h3>
+    <h3 class="date">8 de abril de 2015</h3>
 </section>
 
 <section><section id="datos-multivariados" class="titleslide slide level1"><h1>Datos Multivariados</h1></section><section id="características" class="slide level2">
@@ -82,11 +82,12 @@
 <figure>
 <img src="../rsc/images/correlation-matrix.png" />
 </figure>
-</section><section id="reducción-de-dimensionalidad-mds" class="slide level2">
-<h1>Reducción de dimensionalidad (MDS)</h1>
+</section><section id="reducción-de-dimensionalidad" class="slide level2">
+<h1>Reducción de dimensionalidad</h1>
 <figure>
 <img src="../rsc/images/mds.jpg" />
 </figure>
+<p>Muchísimos metodos: MDS, PCA, StarCoordinates, …</p>
 </section><section id="grand-tour" class="slide level2">
 <h1>Grand Tour</h1>
 <video src="../rsc/videos/grand-tour.webm" controls>
@@ -121,6 +122,14 @@
 <iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3943967/" frameborder="1">
 <figure>
 <img src="../rsc/images/link.png" alt="http://bl.ocks.org/mbostock/raw/3943967/" /><figcaption><a href="http://bl.ocks.org/mbostock/raw/3943967/">http://bl.ocks.org/mbostock/raw/3943967/</a></figcaption>
+</figure>
+</iframe>
+
+</section><section id="bullet-chart" class="slide level2">
+<h1>Bullet chart</h1>
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4061961/" frameborder="1">
+<figure>
+<img src="../rsc/images/link.png" alt="http://bl.ocks.org/mbostock/raw/4061961/" /><figcaption><a href="http://bl.ocks.org/mbostock/raw/4061961/">http://bl.ocks.org/mbostock/raw/4061961/</a></figcaption>
 </figure>
 </iframe>
 
@@ -190,6 +199,7 @@
           { src: '../rsc/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: '../rsc/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
           { src: '../rsc/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 //          { src: '../rsc/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
 //          { src: '../rsc/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 ]});

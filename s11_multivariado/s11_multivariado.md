@@ -1,6 +1,6 @@
 % Datos Multivariados
 % Juan Morales del Olmo
-% 24 de marzo de 2014
+% 8 de abril de 2015
 
 # Datos Multivariados
 
@@ -52,9 +52,11 @@
 
 ![](../rsc/images/correlation-matrix.png)
 
-## Reducción de dimensionalidad (MDS)
+## Reducción de dimensionalidad
 
 ![](../rsc/images/mds.jpg)
+
+Muchísimos metodos: MDS, PCA, StarCoordinates, ...
 
 ## Grand Tour
 
@@ -86,6 +88,13 @@
 
 <iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3943967/" frameborder="1">
 ![[http://bl.ocks.org/mbostock/raw/3943967/](http://bl.ocks.org/mbostock/raw/3943967/)](../rsc/images/link.png)
+
+</iframe>
+
+## Bullet chart
+
+<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4061961/" frameborder="1">
+![[http://bl.ocks.org/mbostock/raw/4061961/](http://bl.ocks.org/mbostock/raw/4061961/)](../rsc/images/link.png)
 
 </iframe>
 
