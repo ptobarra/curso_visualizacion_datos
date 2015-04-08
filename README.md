@@ -9,6 +9,10 @@
 * [Datos Temporales](s13_temporal_y_espacial/s13_temporal.html)
 * [Datos Multivariados](s13_temporal_y_espacial/s13_espacial.html)
 
+### Práctica 2 ###
+
+* [Enunciado](practica/index.html)
+
 <hr>
 
 ## Curso de D3.js
