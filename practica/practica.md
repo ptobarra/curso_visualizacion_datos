@@ -6,15 +6,29 @@ El objetivo de la práctica es la creación de una herramienta de
 visualización de datos interactiva.
 
 El conjunto de datos a utilizar está abierto a la elección del
-estudiante. Se sugiere el conjunto de datos del
-[Yelp data challenge](http://www.yelp.com/dataset_challenge/). Este
-dataset es muy amplio, ideal para que escojáis un subconjunto, o
-saquéis datos derivados a partir de él. Por ejemplo, se podría
-construir una red (un grafo) siendo los nodos los negocios y creando
-un arco entre todos aquellos negocios que compartan recomendaciones de
-un mismo usuario.
+estudiante.
 
-El plazo de entrega termina el día **28 de Abril a las 24:00
+Algunas sugerencuas son:
+
+* [Yelp data challenge](http://www.yelp.com/dataset_challenge/). Este
+dataset es muy amplio, ideal para que escojáis un subconjunto, o
+saquéis datos derivados a partir de él.
+
+* [ Cursos de MITx y HarvardX en edX ](http://harvardx.harvard.edu/dataset).
+Un dataset de casi 700.000 registros, con información de un año
+académico completo (2013) en la plataforma americana edX.
+
+* [ Stanford Large Network Dataset Collection](http://snap.stanford.edu/data/index.html)
+Muchos datasets con muchas redes enormes. Aunque todo son redes, se
+pueden analizar como datasets multivariados, temporales o espaciales.
+
+* [ Apuestas de football](http://football-data.co.uk/spainm.php) Datos
+históricos de partidos de fútbol de la Liga de Fútbol Profesional de
+España, de Primera y de Segunda División. Contiene resultados de cada
+partido, los precios que se alcanzaron en distintas casas de
+apuestas.
+
+El plazo de entrega termina el día **11 de Mayo a las 24:00
 horas**. La práctica se evaluará sobre 10 puntos y se establece una
 penalización de 2.5 puntos a la puntuación máxima alcanzable por cada
 día de retraso.
