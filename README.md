@@ -7,7 +7,8 @@
 * [Casos](s09_evaluacion/s09_casos.html)
 * [Datos Multivariados](s11_multivariado/s11_multivariado.html)
 * [Datos Temporales](s13_temporal_y_espacial/s13_temporal.html)
-* [Datos Multivariados](s13_temporal_y_espacial/s13_espacial.html)
+* [Datos Espaciales](s13_temporal_y_espacial/s13_espacial.html)
+* [Redes y Jerarquías](s15_redes_y_jerarquías/s15_redes_jerarquías.html)
 
 ### Práctica 2 ###
 
