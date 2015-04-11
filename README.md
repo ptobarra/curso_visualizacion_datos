@@ -22,11 +22,14 @@
 * [Crear con datos](curso_d3/crear_con_datos.html)
 * [Enter, Update y Exit](curso_d3/enter_update_exit.html)
 * [Más allá del core](curso_d3/mas_alla_del_core.html)
-<!-- * [Ejercicios](curso_d3/ejercicios/index.html) -->
+* [Ejercicios](curso_d3/ejercicios/index.html) -- [ejercicios.zip](curso_d3/ejercicios.zip)
+
 
 ### Recursos
 
 * [Plantilla](curso_d3/plantilla/) -- [plantilla.zip](curso_d3/plantilla.zip)
 * Datos:
 	* [cars](curso_d3/data/cars.csv)
+
+* [Leer archivos locales en Chrome](http://www.chrome-allow-file-access-from-file.com/) 
 
