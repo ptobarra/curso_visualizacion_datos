@@ -9,6 +9,7 @@
 * [Datos Temporales](s13_temporal_y_espacial/s13_temporal.html)
 * [Datos Espaciales](s13_temporal_y_espacial/s13_espacial.html)
 * [Redes y Jerarquías](s15_redes_y_jerarquías/s15_redes_jerarquías.html)
+* [Visualización científica](s17_scivis/s17_scivis.html)
 
 ### Práctica 2 ###
 
