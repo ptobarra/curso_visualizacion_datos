@@ -1,6 +1,6 @@
 % Datos Multivariados
 % Juan Morales del Olmo
-% 8 de abril de 2015
+% 19 de abril de 2016
 
 # Datos Multivariados
 
@@ -110,7 +110,7 @@ Muchísimos metodos: MDS, PCA, StarCoordinates, ...
 
 ##
 
-![Jock D. Mackinlay's Perceptual tasks](../rsc/images/Mackinlay_PerceptualTask.jpg)
+![Visual Channels](../rsc/images/visual_variables.png)
 
 ## Glifos
 

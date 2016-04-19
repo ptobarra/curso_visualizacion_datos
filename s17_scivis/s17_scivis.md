@@ -1,6 +1,6 @@
 % Visualización científica
 % Juan Morales del Olmo
-% 16 de abril de 2015
+% 28 de abril de 2016
 
 # Visualización científica
 
