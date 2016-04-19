@@ -43,10 +43,7 @@
 
 ## Scatter Plots Matrix
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4063663/" frameborder="1">
-	![[http://bl.ocks.org/mbostock/raw/4063663/](http://bl.ocks.org/mbostock/raw/4063663/)](../rsc/images/link.png)
-	
-</iframe>
+[![](../rsc/images/scatter_plot_matrix.png)](http://bl.ocks.org/mbostock/raw/4063663/)
 
 ## Correlation Matrix
 
@@ -73,10 +70,9 @@ Muchísimos metodos: MDS, PCA, StarCoordinates, ...
 
 ## Coordenadas Paralelas
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/7586334/" frameborder="1">
-![[http://bl.ocks.org/mbostock/raw/7586334/](http://bl.ocks.org/mbostock/raw/7586334/)](../rsc/images/link.png)
 
-</iframe>
+[![](../rsc/images/pcp.png)](http://bl.ocks.org/mbostock/raw/7586334/)
+
 
 ## Gráfica de Radar
 
@@ -86,17 +82,13 @@ Muchísimos metodos: MDS, PCA, StarCoordinates, ...
 
 ## Gráficos de barras agrupados y apilados
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/3943967/" frameborder="1">
-![[http://bl.ocks.org/mbostock/raw/3943967/](http://bl.ocks.org/mbostock/raw/3943967/)](../rsc/images/link.png)
 
-</iframe>
+[![](../rsc/images/stacked.png)](http://bl.ocks.org/mbostock/raw/3943967/)
 
 ## Bullet chart
 
-<iframe width="100%" height="800" src="http://bl.ocks.org/mbostock/raw/4061961/" frameborder="1">
-![[http://bl.ocks.org/mbostock/raw/4061961/](http://bl.ocks.org/mbostock/raw/4061961/)](../rsc/images/link.png)
 
-</iframe>
+[![](../rsc/images/bullets.png)](http://bl.ocks.org/mbostock/raw/4061961/)
 
 ## Gráficos en mosaico
 
