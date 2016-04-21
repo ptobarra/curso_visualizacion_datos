@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Juan Morales del Olmo" />
+  <title>Bokeh</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../rsc/reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+
+  <link rel="stylesheet" href="../rsc/reveal.js/css/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="../rsc/style.css"/>
+
+  <link rel="stylesheet" media="print" href="../rsc/reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="../rsc/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Bokeh</h1>
+    <h2 class="author">Juan Morales del Olmo</h2>
+    <h3 class="date">21 de abril de 2016</h3>
+</section>
+
+<section><section id="overview" class="titleslide slide level1"><h1>Overview</h1></section><section id="qué-es-bokeh" class="slide level2">
+<h1>¿Qué es Bokeh?</h1>
+<ul>
+<li>Libería de visualización de datos</li>
+<li>Se programa en Python, renderiza en navegador (Javascript)</li>
+<li>Bindings para otros lenguajes como R o Julia</li>
+<li>Permite interacción</li>
+</ul>
+</section><section id="apis" class="slide level2">
+<h1>APIs</h1>
+<ul>
+<li><p>Tres niveles de interfaz para los usuarios:</p>
+<ul>
+<li class="fragment">Interfaz de bajo nivel <strong>bokeh.models</strong>: Sólo para a los desarrolladores de Bokeh.</li>
+<li class="fragment">Interfaz de nivel intermedio <strong>bokeh.plotting</strong>: Cercano al concepto de “Visualization Grammar”</li>
+<li class="fragment">Interfaz de alto nivel <strong>bokeh.charts</strong>: Dibuja Charts estándar rápidamente</li>
+</ul></li>
+</ul>
+</section><section class="slide level2">
+
+<figure>
+<img src="rsc/bokeh_ejemplos.jpg" alt="Ejemplos" /><figcaption><a href="http://bokeh.pydata.org/en/latest/docs/gallery.html#standalone-examples">Ejemplos</a></figcaption>
+</figure>
+</section><section id="outputs" class="slide level2">
+<h1>Outputs</h1>
+<ul>
+<li><p>Con <strong>output_file(“chart.html”)</strong> se indica el fichero de salida</p></li>
+<li><p>Con <strong>save</strong> se ejecuta y crea el html</p></li>
+<li><p>Con <strong>show</strong> se ejecuta, se crea el html y se abre en el navegador</p></li>
+</ul>
+</section><section id="notebooks" class="slide level2">
+<h1>Notebooks</h1>
+<ul>
+<li><p>Bokeh se integra perfectamente con los cuadernos Jupyter</p></li>
+<li><p>Para ver los ejemplos en un notebook, se puede cambiar <strong>output_file()</strong> por <strong>output_notebook()</strong></p></li>
+</ul>
+</section><section id="plotting-api" class="slide level2">
+<h1>Plotting API</h1>
+<pre><code># create a Figure object
+p = figure(width=800, height=500, tools=&quot;pan,reset,save&quot;)
+
+# add a Circle renderer to this figure
+p.circle([1, 2.5, 3, 2], [2, 3, 1, 1.5], radius=0.3, alpha=0.5)
+
+# specify how to output the plot(s)
+output_file(&quot;circles.html&quot;)
+
+show(p)</code></pre>
+</section><section class="slide level2">
+
+<iframe width="100%" height="800" src="rsc/circles.html">
+    
+<figure>
+<img src="../rsc/images/link.png" alt="rsc/circles.html" /><figcaption><a href="rsc/circles.html">rsc/circles.html</a></figcaption>
+</figure>
+</iframe>
+
+
+</section><section id="pasos-básicos-plotting" class="slide level2">
+<h1>Pasos básicos Plotting:</h1>
+<ol type="1">
+<li>Preparar algunos datos (listas de Python o <strong>DataFrames</strong> de <a href="http://pandas.pydata.org/">Pandas</a>).</li>
+<li>Indicar fichero de salida (output_file (“plot.html”)).</li>
+<li>Llamar a figure() para crear un gráfico con algunas opciones generales como el título, herramientas y etiquetas de los ejes.</li>
+<li>Añadir <strong>Marcas</strong> especificando parámetros como color, leyendas, etc.</li>
+<li>Renderizar la gráfica (show o save).</li>
+</ol>
+</section><section id="aspecto-visual" class="slide level2">
+<h1>Aspecto visual</h1>
+<ul>
+<li>Configurar los parámetros del Figure:
+<ul>
+<li>Tamaño</li>
+<li>Títulos</li>
+<li>Ejes</li>
+<li>…</li>
+</ul></li>
+<li>Configurar los parámetros de la Marca:
+<ul>
+<li>El color (fill_color, fill_alpha)</li>
+<li>El tamaño</li>
+<li>La fuente de la letra</li>
+<li>El estilo de la línea</li>
+<li>…</li>
+</ul></li>
+<li>Revisar la <a href="http://bokeh.pydata.org/en/latest/docs/user_guide/styling.html">documentación</a></li>
+</ul>
+</section><section id="chart-api" class="slide level2">
+<h1>Chart API</h1>
+<pre><code>from bokeh.charts import Scatter, output_file, show
+
+# prepare some data, a Pandas GroupBy object in this case
+from bokeh.sampledata.autompg import autompg as df
+
+# create a scatter chart
+p = Scatter(df, x=&#39;mpg&#39;, y=&#39;hp&#39;, color=&#39;cyl&#39;,
+            title=&quot;MPG vs HP (colored by CYL)&quot;,
+            legend=&#39;top_right&#39;,
+            xlabel=&quot;Miles Per Gallon&quot;,
+            ylabel=&quot;Horsepower&quot;)
+
+# specify how to output the plot(s)
+output_file(&quot;chart.html&quot;)
+
+# display the figure
+show(p)</code></pre>
+</section><section class="slide level2">
+
+<iframe width="100%" height="800" src="rsc/charting.html">
+    
+<p><img src="../rsc/images/link.png" alt="rsc/circles.html" /> </iframe></p>
+</section></section>
+<section><section id="ejercicios" class="titleslide slide level1"><h1>Ejercicios</h1></section><section id="ejercicio-1" class="slide level2">
+<h1>Ejercicio 1</h1>
+<ul>
+<li><p>Usando Bokeh intenta generar una gráfica que:</p>
+<ul>
+<li>Visualice 5 marcas situadas en [x, y] diferentes (numpy.random)</li>
+<li>Utilicen un radio diferente de entre 10 y 30</li>
+<li>Utilice asteriscos como marcas</li>
+<li>El color sea “firebrick”</li>
+<li>El ancho de la linea sea 3</li>
+</ul></li>
+</ul>
+</section><section class="slide level2">
+
+<iframe width="100%" height="800" src="rsc/asterisk.html">
+    
+<p><img src="../rsc/images/link.png" alt="rsc/asterisk.html" /> </iframe></p>
+</section><section id="ejercicio-2" class="slide level2">
+<h1>Ejercicio 2</h1>
+<ul>
+<li>Añade un título a la gráfica (parámetro de la figura)</li>
+<li>Añade etiquetas a los ejes x e y (parámetro de la marca)</li>
+<li>Deja sólamente la interacción “pan”</li>
+</ul>
+</section><section id="ejercicio-3" class="slide level2">
+<h1>Ejercicio 3</h1>
+<ul>
+<li>Carga el dataset <code>import bokeh.sampledata.iris as df</code></li>
+<li>Usando el chart <code>Scatter</code> genera la siguiente gráfca</li>
+</ul>
+</section><section class="slide level2">
+
+<iframe width="100%" height="800" src="rsc/iris_simple.html">
+    
+<p><img src="../rsc/images/link.png" alt="rsc/iris_simple.html" /> </iframe></p>
+</section><section id="ejercicio-4" class="slide level2">
+<h1>Ejercicio 4</h1>
+<ul>
+<li>Repite el mismo plot, esta vez utilizando <code>bokeh.plotting</code> en vez de Charts</li>
+</ul>
+</section><section id="ejercicio-5" class="slide level2">
+<h1>Ejercicio 5</h1>
+<ul>
+<li>Usando <a href="http://bokeh.pydata.org/en/latest/docs/reference/io.html#bokeh.io.gridplot">gridplot</a> crea un Scatter Plot Matrix del dataset <code>Iris</code> similar al siguiente:</li>
+</ul>
+<p><a href="http://bl.ocks.org/mbostock/raw/4063663/"><img src="../rsc/images/scatter_plot_matrix.png" /></a></p>
+</section><section id="ejercicio-6" class="slide level2">
+<h1>Ejercicio 6</h1>
+<ul>
+<li>Usando la API de Yahoo, descarga los datos de GOOG, AAPL, IBM</li>
+</ul>
+<pre><code>AAPL = pd.read_csv(
+    &quot;http://ichart.yahoo.com/table.csv?s=AAPL&amp;a=0&amp;b=1&amp;c=2000&amp;d=0&amp;e=1&amp;f=2010&quot;,
+    parse_dates=[&#39;Date&#39;])</code></pre>
+<ul>
+<li>Muestra la tabla de un DataFrame y mira qué columnas tiene</li>
+</ul>
+</section><section id="ejercicio-7" class="slide level2">
+<h1>Ejercicio 7</h1>
+<ul>
+<li>Pinta el valor total de las empresas GOOG, AAPL, IBM desde 2000 hasta 2016</li>
+</ul>
+<iframe width="100%" height="800" src="rsc/timeseries.html">
+    
+<p><img src="../rsc/images/link.png" alt="rsc/timeseries.html" /> </iframe></p>
+</section><section id="ejercicio-8" class="slide level2">
+<h1>Ejercicio 8</h1>
+<ul>
+<li>Pinta los rangos de cada día (apertura y cierre), con un cuadrado por día. Sólo lo que llevamos de 2016.</li>
+<li>Los días con ganancias con color verde, las pérdidas en rojo</li>
+<li>Utilizando vplot pinta las 3 compañías</li>
+</ul>
+</section><section id="ejercicio-9" class="slide level2">
+<h1>Ejercicio 9</h1>
+<ul>
+<li>Modifica el ejercicio 8 para crear un <a href="https://es.wikipedia.org/wiki/Gr%C3%A1fico_de_velas">diagrama de velas</a> completo</li>
+</ul>
+</section><section id="ejercicio-10" class="slide level2">
+<h1>Ejercicio 10</h1>
+<ul>
+<li>Crea un Bullet Chart con estos <a href="http://gist.githubusercontent.com/mbostock/4061961/raw/6eb742223b9795260ba62150196ed0ae4a461e39/bullets.json">datos</a></li>
+</ul>
+<p><a href="http://bl.ocks.org/mbostock/raw/4061961/"><img src="../rsc/images/bullets.png" /></a></p>
+</section><section id="ejercicio-11" class="slide level2">
+<h1>Ejercicio 11</h1>
+<ul>
+<li>Con el dataset autompg crea un PCP</li>
+</ul>
+<pre><code>from bokeh.sampledata.autompg import autompg as df</code></pre>
+<p><a href="http://bl.ocks.org/mbostock/raw/7586334/"><img src="../rsc/images/pcp.png" /></a></p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="../rsc/reveal.js/lib/js/head.min.js"></script>
+  <script src="../rsc/reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        theme: 'simple', // available themes are in /css/theme
+        transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '../rsc/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+//          { src: '../rsc/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: '../rsc/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>
