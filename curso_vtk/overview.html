@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Juan Morales del Olmo" />
+  <title>VTK</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../rsc/reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+
+  <link rel="stylesheet" href="../rsc/reveal.js/css/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="../rsc/style.css"/>
+
+  <link rel="stylesheet" media="print" href="../rsc/reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="../rsc/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">VTK</h1>
+    <h2 class="author">Juan Morales del Olmo</h2>
+    <h3 class="date">3 de mayo de 2016</h3>
+</section>
+
+<section><section id="overview" class="titleslide slide level1"><h1>Overview</h1></section><section id="qué-es-vtk" class="slide level2">
+<h1>¿Qué es VTK?</h1>
+<ul>
+<li>Visualization Toolkit</li>
+<li>Creada para el proyecto “Visible Humand”</li>
+<li>Creada por Kitware. Totalmente OpenSource.</li>
+<li>Libería de visualización de datos científicos en C++</li>
+<li>Bindings para otros lenguajes como Python</li>
+</ul>
+</section><section id="arquitectura" class="slide level2">
+<h1>Arquitectura</h1>
+<ul>
+<li><p>Pipeline de Datos –&gt; Pipeline Gráfico</p></li>
+<li>SetInputConnection()</li>
+<li><p>GetOutputPort()</p></li>
+<li>Cada filtro cachea salida
+<ul>
+<li>Update y Modified</li>
+</ul></li>
+</ul>
+</section><section id="pipeline" class="slide level2">
+<h1>Pipeline</h1>
+<figure>
+<img src="rsc/pipeline.svg" />
+</figure>
+</section><section id="sources" class="slide level2">
+<h1>Sources</h1>
+<ul>
+<li><p>Punto de inicio de los datos</p></li>
+<li>Leídos desde archivos (Readers)
+<ul>
+<li>Formatos poligonales: <a href="http://www.vtk.org/doc/release/6.3/html/classvtkOBJReader.html">ObjReader</a></li>
+<li>Imágenes: <a href="http://www.vtk.org/doc/release/6.3/html/classvtkPNGReader.html">PNGReader</a></li>
+</ul></li>
+<li>Datos Generados
+<ul>
+<li>Cuerpos 3D: <a href="http://www.vtk.org/doc/release/6.3/html/classvtkSphereSource.html">vtkSphereSource</a></li>
+<li>Funciones Implícitas: <a href="http://www.vtk.org/doc/release/6.3/html/classvtkSphere.html">vtkSphere</a></li>
+</ul></li>
+</ul>
+</section><section id="cell-types" class="slide level2">
+<h1>Cell Types</h1>
+<figure>
+<img src="rsc/celltypes.png" />
+</figure>
+</section><section id="data-objects" class="slide level2">
+<h1>Data Objects</h1>
+<figure>
+<img src="rsc/datatypes.jpg" />
+</figure>
+</section><section id="filters" class="slide level2">
+<h1>Filters</h1>
+<ul>
+<li><p>Modifican los DataObjects</p></li>
+<li><p>Su uso es opcional, pero gran parte de la potencia de VTK está en los filtros</p></li>
+<li><p>Pueden transformar de unos tipos a otros: <a href="http://www.vtk.org/doc/release/6.3/html/classvtkMarchingCubes.html">MarchingCubes</a></p></li>
+</ul>
+</section><section id="mappers" class="slide level2">
+<h1>Mappers</h1>
+<ul>
+<li><p>Unen el pipeline de datos al de visualizacíón</p></li>
+<li><p>Controlan la visibilidad de los escalares: - mapper.ScalarVisibilityOff()</p></li>
+<li><p>Controlan el mapping de colorres&gt; - mapper.SetLookupTable(lut)</p></li>
+</ul>
+</section><section id="actors" class="slide level2">
+<h1>Actors</h1>
+<ul>
+<li><p>Posicionan al elemento en la escena</p></li>
+<li>Controlan algunas propiedades visuales:
+<ul>
+<li><code>SetOpacity</code><br /></li>
+<li><code>SetColor</code><br /></li>
+<li><code>SetDiffuseColor</code></li>
+<li><code>SetLineWidth</code></li>
+</ul></li>
+</ul>
+</section><section id="renderers" class="slide level2">
+<h1>Renderers</h1>
+<ul>
+<li><p>Controlan el proceso de renderizado</p></li>
+<li><p>Contienen los actores a renderizar</p></li>
+<li><p>Contienen las luces y la cámara activa</p></li>
+</ul>
+</section><section id="windowrenderer" class="slide level2">
+<h1>WindowRenderer</h1>
+<ul>
+<li><p>Abstrae el abrir una ventana en las diferentes plataformas</p></li>
+<li><p>No necesario si el render es OffScreen y se quiere guardar a disco</p></li>
+</ul>
+</section><section id="windowrendererinteraction" class="slide level2">
+<h1>WindowRendererInteraction</h1>
+<ul>
+<li><p>Añade posibilidades de interacción a la ventana</p></li>
+<li><p>Permite fácil navegación por la escena</p></li>
+<li><p>Varios estilos de navegación</p></li>
+<li><p>Permite interactuar con Widgets añadidos a la escena</p></li>
+</ul>
+</section></section>
+<section><section id="programando-con-vtk" class="titleslide slide level1"><h1>Programando con VTK</h1></section><section id="hola-mundo" class="slide level2">
+<h1>Hola Mundo</h1>
+<pre><code>coneSource = vtk.vtkConeSource()
+coneSource.SetResolution(10)
+
+mapper = vtk.vtkPolyDataMapper()
+mapper.SetInputConnection(coneSource.GetOutputPort())
+
+actor = vtk.vtkActor()
+actor.SetMapper(mapper)
+ 
+renderer = vtk.vtkRenderer()
+renderer.AddActor(actor)
+
+renderWindow = vtk.vtkRenderWindow()
+renderWindow.AddRenderer(renderer)
+
+renderWindowInteractor = vtk.vtkRenderWindowInteractor()
+renderWindowInteractor.SetRenderWindow(renderWindow)
+ 
+renderWindow.Render()
+renderWindowInteractor.Start()</code></pre>
+</section><section id="ejercicios" class="slide level2">
+<h1>Ejercicios</h1>
+<ul>
+<li>Completa los <a href="rsc/codigo/Enunciado+Ejercicios.html">ejercicios</a> propuestos</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="../rsc/reveal.js/lib/js/head.min.js"></script>
+  <script src="../rsc/reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        theme: 'simple', // available themes are in /css/theme
+        transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '../rsc/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../rsc/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+//          { src: '../rsc/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: '../rsc/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>

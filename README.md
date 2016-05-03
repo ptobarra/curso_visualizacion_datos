@@ -11,3 +11,12 @@
 
 * [Referencia](http://bokeh.pydata.org/en/latest/docs/reference.html)
 * [Gráficos estáticos](curso_bokeh/overview.html)
+
+### VTK
+
+* [Referencia](http://www.vtk.org/doc/nightly/html/classes.html)
+* [Overview](curso_vtk/overview.html)
+* Datos:
+	- [atoms-connections.txt](curso_vtk/data/atoms-connections.txt)
+	- [atoms-coordinates.txt](curso_vtk/data/atoms-coordinates.txt)
+	- [atoms-radius.txt](curso_vtk/data/atoms-radius.txt)
